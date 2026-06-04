@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoàng Phương Thảo — HLU Digital Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Particle Background Canvas for Premium Visual Effect -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="include/logo-dai-hoc-luat-ha-noi-inkythuatso-01.png" alt="HLU Logo" class="nav-logo-img">
+                <div class="nav-logo-text-group">
+                    <span class="nav-school-name-vi">TRƯỜNG ĐẠI HỌC LUẬT HÀ NỘI</span>
+                    <span class="nav-school-name-en">HANOI LAW UNIVERSITY</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-links">
+                <a href="#hero" class="nav-link active">Khởi đầu</a>
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#projects" class="nav-link">Dự án bài tập</a>
+                <a href="#reflection" class="nav-link">Tổng kết</a>
+            </nav>
+            
+            <div class="nav-badge">
+                <span class="badge-dot"></span>
+                <span>HLU Student Portfolio</span>
+            </div>
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="mobile-toggle" aria-label="Toggle Menu" id="mobile-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+            </div>
+            <div class="container hero-container">
+                <div class="hero-content scroll-reveal">
+                    <div class="tagline">
+                        <span class="tag-line-text">Digital Portfolio</span>
+                        <span class="tag-divider"></span>
+                        <span class="tag-institution">Đại Học Luật Hà Nội</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hoàng Phương Thảo
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span id="fade-text" class="fade-text-container">Chuyên ngành <span class="highlight-text">Luật học</span></span>
+                    </div>
+                    <p class="hero-description">
+                        Chào mừng thầy cô và các bạn tới không gian lưu trữ bài tập cá nhân môn **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo**. Nơi trình bày quy trình ứng dụng các công cụ kỹ thuật số hỗ trợ công việc và nghiên cứu pháp luật.
+                    </p>
+                    <div class="hero-cta-group">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Khám phá bài tập</span>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <span>Về tôi</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Graphic Cover Page style -->
+                <div class="hero-graphic scroll-reveal">
+                    <div class="magazine-cover-frame">
+                        <div class="cover-header">
+                            <span class="volume">Vol. 01 — 2026</span>
+                            <span class="issue">LUẬT HỌC & CÔNG NGHỆ SỐ</span>
+                        </div>
+                        <div class="cover-main">
+                            <span class="initials">HLU</span>
+                            <div class="cover-concept">
+                                <h3>Digital Law</h3>
+                                <p>Sự giao thoa của pháp luật truyền thống và công nghệ hiện đại trong kỷ nguyên số.</p>
+                            </div>
+                        </div>
+                        <div class="cover-footer">
+                            <span>Môn học: Nhập môn Công nghệ số & Ứng dụng AI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Sơ lược bản thân</span>
+                    <h2 class="section-title">Hành trình & Định hướng</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <!-- Bio Glass Card -->
+                    <div class="about-card bio-card glass-card scroll-reveal">
+                        <div class="card-corner-decor"></div>
+                        <div class="profile-info-header">
+                            <div class="profile-avatar-placeholder">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 21C20 18.2386 16.4183 16 12 16C7.58172 16 4 18.2386 4 21" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                                    <path d="M12 12C14.2091 12 16 10.2091 16 8C16 5.79086 14.2091 4 12 4C9.79086 4 8 5.79086 8 8C8 10.2091 9.79086 12 12 12Z" stroke="currentColor" stroke-width="1.8"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="profile-name">Hoàng Phương Thảo</h3>
+                                <p class="profile-sub">Sinh viên ngành Luật học • Trường Đại học Luật Hà Nội</p>
+                            </div>
+                        </div>
+                        
+                        <div class="profile-quote">
+                            <span class="quote-symbol">“</span>
+                            <p>Không chỉ dừng lại ở các quy phạm khô khan, tôi tin pháp luật kết hợp cùng công nghệ số sẽ mang đến những giải pháp thực thi hiệu quả, minh bạch và cấp tiến cho xã hội.</p>
+                        </div>
+                        
+                        <!-- Future Orientation -->
+                        <div class="profile-future">
+                            <h4>Định hướng tương lai</h4>
+                            <p>Nâng cao kiến thức chuyên môn về pháp luật, rèn luyện kỹ năng tranh luận sắc bén, năng lực nghiên cứu khoa học pháp lý và giải quyết linh hoạt các tình huống thực tế. Hướng tới trở thành một người làm việc trong ngành Luật có tri thức vững vàng và tinh thần trách nhiệm nghề nghiệp cao.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Hobbies and Goals Card -->
+                    <div class="about-details scroll-reveal">
+                        <!-- Education goal -->
+                        <div class="detail-block glass-card">
+                            <div class="block-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 14L2 9L12 4L22 9L12 14Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                                    <path d="M4.33008 11.6001V16.8001C4.33008 18.0001 7.76008 19.8001 12.0001 19.8001C16.2401 19.8001 19.6701 18.0001 19.6701 16.8001V11.6001" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 9V17" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="block-content">
+                                <h3>Mục tiêu Portfolio này</h3>
+                                <p>Hệ thống hóa toàn bộ các kỹ năng số đã tiếp thu từ lớp học như: Quản lý thư mục, tra cứu học thuật pháp lý nâng cao, tối ưu công việc bằng Prompt AI chất lượng cao, phối hợp nhóm trực tuyến và nghiên cứu AI có trách nhiệm đạo đức.</p>
+                            </div>
+                        </div>
+
+                        <!-- Hobbies list -->
+                        <div class="detail-block hobbies-block glass-card">
+                            <h3>Sở thích cá nhân</h3>
+                            <div class="hobbies-grid">
+                                <div class="hobby-item">
+                                    <div class="hobby-icon badminton">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M5.5 12H18.5" stroke="currentColor" stroke-width="1.5"/>
+                                            <path d="M12 5.5V18.5" stroke="currentColor" stroke-width="1.5"/>
+                                            <path d="M7.4 7.4L16.6 16.6" stroke="currentColor" stroke-width="1.5"/>
+                                            <path d="M7.4 16.6L16.6 7.4" stroke="currentColor" stroke-width="1.5"/>
+                                        </svg>
+                                    </div>
+                                    <span>Chơi cầu lông</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <div class="hobby-icon music">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 18V5L21 3V16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6 21C7.65685 21 9 19.6569 9 18C9 16.3431 7.65685 15 6 15C4.34315 15 3 16.3431 3 18C3 19.6569 4.34315 21 6 21Z" stroke="currentColor" stroke-width="1.8"/>
+                                            <path d="M18 19C19.6569 19 21 17.6569 21 16C21 14.3431 19.6569 13 18 13C16.3431 13 15 14.3431 15 16C15 17.6569 16.3431 19 18 19Z" stroke="currentColor" stroke-width="1.8"/>
+                                        </svg>
+                                    </div>
+                                    <span>Nghe nhạc, xem phim</span>
+                                </div>
+                                <div class="hobby-item">
+                                    <div class="hobby-icon lawbook">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M4 19.5C4 18.837 4.26339 18.2011 4.73223 17.7322C5.20107 17.2634 5.83696 17 6.5 17H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M6.5 2H20V22H6.5C5.83696 22 5.20107 21.7366 4.73223 21.2678C4.26339 20.7989 4 20.163 4 19.5V4.5C4 3.83696 4.26339 3.20107 4.73223 2.73223C5.20107 2.26339 5.83696 2 6.5 2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <span>Đọc sách pháp luật</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Dashboard Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Sản phẩm kỹ thuật số</span>
+                    <h2 class="section-title">Danh Mục Bài Tập Dự Án</h2>
+                    <div class="header-line"></div>
+                    <p class="section-desc-text">
+                        Hãy chọn từng bài tập ở thanh danh sách bên trái để kiểm tra quy trình thực hiện, mục tiêu và kết quả sản phẩm tương ứng.
+                    </p>
+                </div>
+                
+                <!-- Main Dashboard Container -->
+                <div class="dashboard-container glass-card scroll-reveal">
+                    
+                    <!-- Dashboard Sidebar (Tabs selector) -->
+                    <div class="dashboard-sidebar">
+                        <div class="sidebar-title">Bài tập thành phần</div>
+                        <ul class="tab-list">
+                            <li class="tab-item active" data-target="task-1">
+                                <span class="tab-num">01</span>
+                                <span class="tab-name">Thao tác Tệp & Thư mục</span>
+                            </li>
+                            <li class="tab-item" data-target="task-2">
+                                <span class="tab-num">02</span>
+                                <span class="tab-name">Tìm kiếm Học thuật</span>
+                            </li>
+                            <li class="tab-item" data-target="task-3">
+                                <span class="tab-num">03</span>
+                                <span class="tab-name">Viết Prompt AI Hiệu quả</span>
+                            </li>
+                            <li class="tab-item" data-target="task-4">
+                                <span class="tab-num">04</span>
+                                <span class="tab-name">Hợp tác Nhóm Trực tuyến</span>
+                            </li>
+                            <li class="tab-item" data-target="task-5">
+                                <span class="tab-num">05</span>
+                                <span class="tab-name">AI Sáng tạo Nội dung</span>
+                            </li>
+                            <li class="tab-item" data-target="task-6">
+                                <span class="tab-num">06</span>
+                                <span class="tab-name">Sử dụng AI có Trách nhiệm</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Dashboard Content Panel -->
+                    <div class="dashboard-content">
+                        
+                        <!-- TAB 1: Cấu trúc thư mục tối ưu -->
+                        <div class="tab-panel active" id="task-1">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 1 — Bài tập 1.4</span>
+                                <h3 class="panel-title">Thao tác cơ bản với Tệp tin và Thư mục</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Thiết lập và tổ chức hệ thống cây thư mục khoa học, áp dụng quy tắc đặt tên tệp tối ưu để phục vụ cho các môn học ngành Luật.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>Quy trình thực hiện & Quy tắc đặt tên tệp</h4>
+                                <p>Trong bài học này, tôi đã thực hành tạo lập hệ thống lưu trữ khoa học trên máy tính cá nhân để chuẩn bị dữ liệu cho môn học. Quy tắc đặt tên tệp thống nhất được áp dụng nhằm dễ dàng tìm kiếm và kiểm soát phiên bản:</p>
+                                <div class="code-box">
+                                    <code>[Mã_Sinh_Viên]_[Tên_Môn_Học]_[Tên_Bài_Tập]_[Phiên_Bản].[Đuôi_Tệp]</code>
+                                    <p class="code-caption">Ví dụ: HLU_240101_NhapMonCNSo_BaiTap1_v1.pdf</p>
+                                </div>
+
+                                <h4 class="margin-top-md">Mô phỏng Hệ thống Thư mục môn học (Tương tác trực tiếp)</h4>
+                                <p class="small-text text-muted">Nhấn vào các thư mục để kiểm tra cấu trúc thư mục con bên trong:</p>
+                                
+                                <div class="interactive-folder-tree">
+                                    <div class="folder-root">
+                                        <div class="tree-item folder active" onclick="toggleFolder(this)">
+                                            <span class="arrow-icon">▼</span>
+                                            <span class="folder-icon">📂</span>
+                                            <span class="item-name">HoangPhuongThao_HLU_Portfolio</span>
+                                        </div>
+                                        <div class="tree-children">
+                                            <div class="tree-item folder active" onclick="toggleFolder(this)">
+                                                <span class="arrow-icon">▼</span>
+                                                <span class="folder-icon">📂</span>
+                                                <span class="item-name">Chuong1_QuanLyTepTin</span>
+                                            </div>
+                                            <div class="tree-children">
+                                                <div class="tree-item file">
+                                                    <span class="file-icon">📄</span>
+                                                    <span class="item-name">HLU_240101_CauTrucThucHanh_v1.png</span>
+                                                </div>
+                                                <div class="tree-item file">
+                                                    <span class="file-icon">📕</span>
+                                                    <span class="item-name">HuongDanThaoTac_QuyChuan.pdf</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="tree-item folder" onclick="toggleFolder(this)">
+                                                <span class="arrow-icon">▶</span>
+                                                <span class="folder-icon">📂</span>
+                                                <span class="item-name">Chuong2_NghienCuuHocThuat</span>
+                                            </div>
+                                            <div class="tree-children" style="display: none;">
+                                                <div class="tree-item file">
+                                                    <span class="file-icon">📊</span>
+                                                    <span class="item-name">HLU_BangDanhGiaNguonTin.xlsx</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="tree-item folder" onclick="toggleFolder(this)">
+                                                <span class="arrow-icon">▶</span>
+                                                <span class="folder-icon">📂</span>
+                                                <span class="item-name">Chuong3_PromptAI</span>
+                                            </div>
+                                            <div class="tree-children" style="display: none;">
+                                                <div class="tree-item file">
+                                                    <span class="file-icon">📝</span>
+                                                    <span class="item-name">SoSoSanhPrompt_DoiChieu.docx</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Báo cáo cấu trúc chi tiết bài tập 1.pdf</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 2: Tìm kiếm học thuật -->
+                        <div class="tab-panel" id="task-2">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 2 — Bài tập 2.4</span>
+                                <h3 class="panel-title">Tìm kiếm và Đánh giá Thông tin Học thuật</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Sử dụng các toán tử tìm kiếm nâng cao (Search Operators) để tìm kiếm các văn bản luật, công trình khoa học pháp lý và xây dựng bảng tiêu chí đánh giá nguồn tin đáng tin cậy.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>1. Cú pháp và Toán tử tìm kiếm nâng cao</h4>
+                                <p>Trong nghiên cứu luật pháp, việc sàng lọc nguồn tin chính thống cực kỳ quan trọng. Tôi đã áp dụng các toán tử nâng cao trên Google Scholar và công cụ tìm kiếm quốc gia để lọc tài liệu:</p>
+                                
+                                <div class="table-container">
+                                    <table class="academic-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Toán tử</th>
+                                                <th>Cú pháp mẫu áp dụng</th>
+                                                <th>Mục đích lọc thông tin</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code>""</code> (Khớp chính xác)</td>
+                                                <td><code>"Luật sở hữu trí tuệ 2019"</code></td>
+                                                <td>Tìm văn bản luật chính xác không bị lẫn từ khóa khác.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>site:</code> (Lọc tên miền)</td>
+                                                <td><code>"tranh chấp hợp đồng" site:gov.vn</code></td>
+                                                <td>Tìm các án lệ và quy định của các cơ quan chính phủ (.gov.vn).</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code>filetype:</code> (Định dạng file)</td>
+                                                <td><code>"thừa kế di sản" filetype:pdf</code></td>
+                                                <td>Tìm các công trình luận văn hoặc bài báo khoa học PDF nghiên cứu chuyên sâu.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <h4 class="margin-top-md">2. Bảng đánh giá chất lượng nguồn tin (CRAAP Test)</h4>
+                                <p>Mỗi tài liệu tìm được đều được đánh giá qua 5 tiêu chí CRAAP (Currency, Relevance, Authority, Accuracy, Purpose) để đảm bảo độ tin cậy khi trích dẫn trước tòa án hoặc báo cáo học thuật:</p>
+                                
+                                <div class="table-container">
+                                    <table class="academic-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Tên tài liệu / Tác giả</th>
+                                                <th>Loại nguồn</th>
+                                                <th>Tính cập nhật</th>
+                                                <th>Độ tin cậy</th>
+                                                <th>Điểm đánh giá</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Tạp chí Tòa án Nhân dân điện tử</td>
+                                                <td>Bài viết Học thuật</td>
+                                                <td>Năm 2025 (Mới)</td>
+                                                <td>Rất cao (Cơ quan Tòa án)</td>
+                                                <td>9/10 (Xuất sắc)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Blog Tư vấn Luật tự do</td>
+                                                <td>Website tổng hợp</td>
+                                                <td>Năm 2023 (Cũ hơn)</td>
+                                                <td>Trung bình (Cần đối chiếu lại)</td>
+                                                <td>5/10 (Cần cẩn trọng)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Bảng đánh giá nguồn tin học thuật hoàn chỉnh.xlsx</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 3: Viết Prompt hiệu quả -->
+                        <div class="tab-panel" id="task-3">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 3 — Bài tập 3.4</span>
+                                <h3 class="panel-title">Thiết kế Prompt AI cho Học tập & Nghiên cứu Luật</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Học cách chuyển đổi từ các câu hỏi cơ bản sang cấu trúc Prompt chuyên sâu (sử dụng khung bối cảnh, vai trò, hạn chế) để nhận phản hồi phân tích pháp lý chính xác từ AI.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>So sánh hiệu quả tương tác AI</h4>
+                                <p>Sự khác biệt giữa việc sử dụng một Prompt thông thường không có hướng dẫn và một Prompt đã được tối ưu hóa theo phương pháp kỹ nghệ câu lệnh (Prompt Engineering) cho các tác vụ tóm tắt luật học:</p>
+                                
+                                <div class="chat-comparison-grid">
+                                    <!-- Old Chat -->
+                                    <div class="chat-box chat-old">
+                                        <div class="chat-header">
+                                            <span class="chat-status-dot expired"></span>
+                                            <span>Prompt thông thường (Chưa tối ưu)</span>
+                                        </div>
+                                        <div class="chat-messages">
+                                            <div class="message user">
+                                                <p>"Tóm tắt giúp tôi Luật sở hữu trí tuệ việt nam."</p>
+                                            </div>
+                                            <div class="message ai">
+                                                <p><strong>AI phản hồi:</strong> Luật sở hữu trí tuệ Việt Nam quy định về quyền tác giả, quyền liên quan, quyền sở hữu công nghiệp và quyền đối với giống cây trồng. Nó bảo vệ các tác phẩm nghệ thuật, sáng chế, nhãn hiệu... Luật này ra đời năm 2005 và có nhiều lần sửa đổi bổ sung.</p>
+                                                <span class="chat-note text-danger">⚠️ Đánh giá: Quá sơ sài, thiếu chiều sâu phân tích và không áp dụng thực tế được.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- New Chat -->
+                                    <div class="chat-box chat-new">
+                                        <div class="chat-header">
+                                            <span class="chat-status-dot active"></span>
+                                            <span>Prompt cải tiến (Đã tối ưu hóa)</span>
+                                        </div>
+                                        <div class="chat-messages">
+                                            <div class="message user">
+                                                <p><strong>Prompt:</strong> "Hãy đóng vai là một luật sư chuyên ngành Sở hữu trí tuệ tại Việt Nam. Tôi là sinh viên Luật đang làm bài luận. Hãy tóm tắt cấu trúc chính của Luật Sở hữu Trí tuệ hiện hành dưới dạng bảng và chỉ ra 3 điểm mới nổi bật nhất của Luật sửa đổi năm 2022. Trình bày ngôn ngữ học thuật chuyên nghiệp."</p>
+                                            </div>
+                                            <div class="message ai">
+                                                <p><strong>AI phản hồi (Tóm tắt):</strong></p>
+                                                <ul>
+                                                    <li><strong>Phần 1:</strong> Quyền tác giả và quyền liên quan (Bảo hộ tác phẩm văn học, khoa học).</li>
+                                                    <li><strong>Phần 2:</strong> Quyền sở hữu công nghiệp (Sáng chế, nhãn hiệu, kiểu dáng công nghiệp).</li>
+                                                </ul>
+                                                <p><strong>3 Điểm mới nổi bật sửa đổi 2022:</strong><br>
+                                                1. Thừa nhận quyền đăng ký sáng chế/kiểu dáng từ ngân sách nhà nước.<br>
+                                                2. Siết chặt bảo hộ bản quyền số trên internet.<br>
+                                                3. Đơn giản hóa thủ tục xác lập quyền sở hữu công nghiệp.</p>
+                                                <span class="chat-note text-success">✓ Đánh giá: Phân tích chính xác, cấu trúc chuyên nghiệp, có giá trị học thuật cao.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Nhật ký Prompting và bảng đối chiếu kết quả.pdf</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 4: Hợp tác nhóm -->
+                        <div class="tab-panel" id="task-4">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 4 — Bài tập 4.4</span>
+                                <h3 class="panel-title">Sử dụng Công cụ Hợp tác Trực tuyến cho Dự án Nhóm</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Thiết lập và quản lý các luồng công việc của nhóm bằng các công cụ trực tuyến (Trello/Notion), nâng cao kỹ năng điều hành và phân chia công việc trong môi trường số.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>Quy trình phối hợp và Phân chia công việc pháp lý</h4>
+                                <p>Trong bài tập nhóm này, chúng tôi đã sử dụng mô hình quản lý dự án Agile/Kanban để điều hành đề tài nghiên cứu pháp luật về "Bảo vệ thông tin cá nhân trên môi trường mạng". Bảng công việc được thiết lập trực quan:</p>
+                                
+                                <div class="kanban-board">
+                                    <!-- Column 1 -->
+                                    <div class="kanban-column">
+                                        <div class="column-header">Cần làm (To Do)</div>
+                                        <div class="kanban-cards">
+                                            <div class="kanban-card">
+                                                <div class="card-tag tag-blue">Nghiên cứu</div>
+                                                <h5>Thu thập tài liệu luật so sánh quốc tế (GDPR)</h5>
+                                                <div class="card-footer-info">Thảo (Leader) • Hạn: 15/06</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column 2 -->
+                                    <div class="kanban-column">
+                                        <div class="column-header">Đang làm (In Progress)</div>
+                                        <div class="kanban-cards">
+                                            <div class="kanban-card">
+                                                <div class="card-tag tag-orange">Viết nội dung</div>
+                                                <h5>Viết dự thảo chương 2: Thực trạng tại Việt Nam</h5>
+                                                <div class="card-footer-info">Nhóm viên A • Hạn: 18/06</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Column 3 -->
+                                    <div class="kanban-column">
+                                        <div class="column-header">Hoàn thành (Done)</div>
+                                        <div class="kanban-cards">
+                                            <div class="kanban-card">
+                                                <div class="card-tag tag-green">Thiết kế</div>
+                                                <h5>Tạo Outline báo cáo & Phân chia phần công việc</h5>
+                                                <div class="card-footer-info">Cả nhóm • Xong</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Minh chứng hoạt động và phân vai dự án nhóm.pdf</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 5: AI tạo sinh hỗ trợ sáng tạo nội dung -->
+                        <div class="tab-panel" id="task-5">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 5 — Bài tập 5.4</span>
+                                <h3 class="panel-title">Sử dụng AI Tạo Sinh hỗ trợ Sáng tạo Nội dung Số</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Tận dụng sức mạnh của các AI sáng sinh (Midjourney, Canva AI, ChatGPT) để lên ý tưởng, phác thảo đồ họa truyền thông pháp luật hoặc viết bài tuyên truyền trực quan.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>Trưng bày sản phẩm truyền thông số phối hợp cùng AI</h4>
+                                <p>Sản phẩm thiết kế đồ họa tuyên truyền về *"Luật giao thông đường bộ mới năm 2026"* được thực hiện qua sự định hình nội dung của người học kết hợp với các công cụ thiết kế thông minh hỗ trợ xử lý bố cục và hình ảnh:</p>
+                                
+                                <div class="media-showcase-card glass-card">
+                                    <div class="media-placeholder">
+                                        <!-- Decorative SVG representing legal digital graphic design -->
+                                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                                            <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" fill-opacity="0.05"/>
+                                            <circle cx="8.5" cy="8.5" r="1.5"/>
+                                            <path d="M21 15L16 10L5 21"/>
+                                        </svg>
+                                        <div class="media-overlay-info">
+                                            <h5>Ấn phẩm truyền thông số: Luật & Cuộc sống</h5>
+                                            <p>Hình ảnh đồ họa tuyên truyền thiết kế bởi Hoàng Phương Thảo thông qua sự hỗ trợ phối màu và phác họa ý tưởng của AI sinh ảnh.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Kịch bản sáng tạo và sản phẩm thiết kế cuối cùng.pdf</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TAB 6: AI có trách nhiệm -->
+                        <div class="tab-panel" id="task-6">
+                            <div class="panel-header">
+                                <span class="panel-chapter">Chương 6 — Bài tập 6.4</span>
+                                <h3 class="panel-title">Sử dụng AI có Trách nhiệm trong Học tập và Nghiên cứu</h3>
+                            </div>
+                            
+                            <div class="panel-meta-grid">
+                                <div class="meta-item">
+                                    <strong>Mục tiêu:</strong>
+                                    <span>Xác định các lằn ranh đỏ đạo đức, hiểu rõ rủi ro về đạo văn, sai lệch thông tin của AI và thiết lập bộ nguyên tắc sử dụng AI có trách nhiệm của cá nhân.</span>
+                                </div>
+                            </div>
+                            
+                            <div class="content-body">
+                                <h4>Bộ Tuyên ngôn & Nguyên tắc sử dụng AI cá nhân</h4>
+                                <p>Là một luật sư tương lai, tôi đặt liêm chính học thuật lên hàng đầu. Dưới đây là 4 nguyên tắc cốt lõi tôi cam kết tuân thủ tuyệt đối khi tích hợp công cụ AI vào học tập:</p>
+                                
+                                <div class="ethics-grid">
+                                    <div class="ethics-card glass-card">
+                                        <div class="ethics-num">I</div>
+                                        <h5>Nguyên tắc Trung thực & Liêm chính</h5>
+                                        <p>Luôn khai báo trung thực các công cụ AI được sử dụng trong nghiên cứu khoa học. Không sử dụng nguyên bản văn bản do AI tạo ra để nộp làm bài tập cá nhân mà không qua chỉnh sửa, phân tích của bản thân.</p>
+                                    </div>
+                                    <div class="ethics-card glass-card">
+                                        <div class="ethics-num">II</div>
+                                        <h5>Nguyên tắc Kiểm chứng thông tin</h5>
+                                        <p>Tuyệt đối không sử dụng thông tin từ AI cung cấp để làm cơ sở pháp lý trực tiếp mà chưa kiểm tra chéo với các nguồn luật gốc (Văn bản quy phạm pháp luật của nhà nước, án lệ chính thức).</p>
+                                    </div>
+                                    <div class="ethics-card glass-card">
+                                        <div class="ethics-num">III</div>
+                                        <h5>Bảo mật & Tôn trọng Bản quyền</h5>
+                                        <p>Không đưa các thông tin cá nhân của người khác, dữ liệu chưa công bố của nhóm hoặc tài liệu mật vào các chatbot AI công cộng để tránh vi phạm quyền riêng tư và thất thoát dữ liệu pháp lý.</p>
+                                    </div>
+                                    <div class="ethics-card glass-card">
+                                        <div class="ethics-num">IV</div>
+                                        <h5>Công cụ bổ trợ, không thay thế</h5>
+                                        <p>Xác định rõ AI chỉ là một người trợ lý hỗ trợ tư duy phản biện, giúp tìm kiếm từ khóa hoặc gợi ý dàn ý, bản thân người học mới là người đưa ra các nhận định pháp lý và chịu trách nhiệm cho các kết luận đó.</p>
+                                    </div>
+                                </div>
+
+                                <div class="document-attach">
+                                    <div class="attach-info">
+                                        <span class="attach-icon">📎</span>
+                                        <span>Tài liệu đính kèm: Bản cam kết liêm chính và bộ quy tắc sử dụng AI.pdf</span>
+                                    </div>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reflection Section -->
+        <section id="reflection" class="reflection-section">
+            <div class="container">
+                <div class="section-header scroll-reveal">
+                    <span class="section-subtitle">Góc nhìn cá nhân</span>
+                    <h2 class="section-title">Tổng kết & Cảm nghĩ</h2>
+                    <div class="header-line"></div>
+                </div>
+                
+                <div class="reflection-grid">
+                    <div class="reflection-main glass-card scroll-reveal">
+                        <h3>Trải nghiệm hành trình làm dự án</h3>
+                        <p>
+                            Quá trình xây dựng Portfolio này thực sự là một trải nghiệm có giá trị lớn đối với tôi. Môn học **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo** đã giúp một sinh viên ngành Luật vốn quen thuộc với các trang văn bản và sách lý thuyết có cơ hội tiếp xúc sâu hơn với thế giới công nghệ số.
+                        </p>
+                        <p>
+                            Việc tập hợp và trình bày lại 6 bài tập thành phần giúp tôi nhìn nhận rõ sự tiến bộ của bản thân qua từng giai đoạn học tập. Việc ứng dụng công nghệ không làm giảm đi tính chất chuyên sâu của ngành luật, mà ngược lại, nó là đòn bẩy giúp cho việc nghiên cứu và áp dụng pháp luật của tôi trở nên năng suất, chính xác và chuyên nghiệp hơn rất nhiều.
+                        </p>
+                    </div>
+                    
+                    <div class="reflection-side scroll-reveal">
+                        <!-- Key Takeaways card -->
+                        <div class="takeaway-card glass-card">
+                            <h4>Bài học lớn nhất đạt được</h4>
+                            <ul class="takeaway-list">
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <div class="list-text">
+                                        <strong>Kỹ năng Prompting:</strong> Giúp tối ưu hóa hàng giờ tìm kiếm thông tin bằng cách đặt câu hỏi cấu trúc thông minh.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <div class="list-text">
+                                        <strong>Ý thức Đạo đức AI:</strong> Hiểu rõ tầm quan trọng của việc kiểm chứng nguồn tin gốc để tránh lỗi ngộ nhận (Hallucination) từ AI.
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="bullet-gold">✦</span>
+                                    <div class="list-text">
+                                        <strong>Quản lý dự án:</strong> Làm việc nhóm khoa học hơn nhờ vào Kanban và hệ thống quản lý số hóa dữ liệu.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p class="footer-logo">HPT<span>.</span></p>
+                <p class="footer-tag">Hoàng Phương Thảo — Digital Portfolio 2026</p>
+                <p class="footer-copyright">© Bản quyền thuộc về Hoàng Phương Thảo • Đại Học Luật Hà Nội</p>
+            </div>
+            
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="#" class="social-link" title="Email" onclick="alert('Đã sao chép email liên hệ: phuongthao.hlu@gmail.com')">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="social-link" title="Facebook">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="academic-badge">
+                    <span>Mã số SV: HLU.2026.XXXX</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>

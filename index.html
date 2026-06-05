@@ -271,13 +271,13 @@
                             
                             <div class="content-body">
                                 <h4>Quy trình thực hiện & Quy tắc đặt tên tệp</h4>
-                                <p>Trong bài học này, tôi đã thực hành tạo lập hệ thống lưu trữ khoa học trên máy tính cá nhân để chuẩn bị dữ liệu cho môn học. Quy tắc đặt tên tệp thống nhất được áp dụng nhằm dễ dàng tìm kiếm và kiểm soát phiên bản:</p>
+                                <p>Tôi đã thực hành tạo lập hệ thống lưu trữ khoa học trên máy tính cá nhân để chuẩn bị dữ liệu cho môn học. Quy tắc đặt tên tệp thống nhất được áp dụng nhằm dễ dàng tìm kiếm và kiểm soát phiên bản:</p>
                                 <div class="code-box">
                                     <code>[Mã_Sinh_Viên]_[Tên_Môn_Học]_[Tên_Bài_Tập]_[Phiên_Bản].[Đuôi_Tệp]</code>
-                                    <p class="code-caption">Ví dụ: HLU_240101_NhapMonCNSo_BaiTap1_v1.pdf</p>
+                                    <p class="code-caption">Ví dụ: HLU_24061610_NhapMonCNSo_BaiTap1_v1.pdf</p>
                                 </div>
 
-                                <h4 class="margin-top-md">Mô phỏng Hệ thống Thư mục môn học (Tương tác trực tiếp)</h4>
+                                <h4 class="margin-top-md">Mô phỏng Cây Thư mục môn học thực tế</h4>
                                 <p class="small-text text-muted">Nhấn vào các thư mục để kiểm tra cấu trúc thư mục con bên trong:</p>
                                 
                                 <div class="interactive-folder-tree">
@@ -285,49 +285,192 @@
                                         <div class="tree-item folder active" onclick="toggleFolder(this)">
                                             <span class="arrow-icon">▼</span>
                                             <span class="folder-icon">📂</span>
-                                            <span class="item-name">HoangPhuongThao_HLU_Portfolio</span>
+                                            <span class="item-name">ThucHanh_HoangPhuongThao</span>
                                         </div>
                                         <div class="tree-children">
+                                            <div class="tree-item file">
+                                                <span class="file-icon">📄</span>
+                                                <span class="item-name">GhiChuQuanTrong.txt</span>
+                                            </div>
                                             <div class="tree-item folder active" onclick="toggleFolder(this)">
                                                 <span class="arrow-icon">▼</span>
                                                 <span class="folder-icon">📂</span>
-                                                <span class="item-name">Chuong1_QuanLyTepTin</span>
+                                                <span class="item-name">TaiLieu</span>
                                             </div>
                                             <div class="tree-children">
                                                 <div class="tree-item file">
                                                     <span class="file-icon">📄</span>
-                                                    <span class="item-name">HLU_240101_CauTrucThucHanh_v1.png</span>
-                                                </div>
-                                                <div class="tree-item file">
-                                                    <span class="file-icon">📕</span>
-                                                    <span class="item-name">HuongDanThaoTac_QuyChuan.pdf</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="tree-item folder" onclick="toggleFolder(this)">
-                                                <span class="arrow-icon">▶</span>
-                                                <span class="folder-icon">📂</span>
-                                                <span class="item-name">Chuong2_NghienCuuHocThuat</span>
-                                            </div>
-                                            <div class="tree-children" style="display: none;">
-                                                <div class="tree-item file">
-                                                    <span class="file-icon">📊</span>
-                                                    <span class="item-name">HLU_BangDanhGiaNguonTin.xlsx</span>
-                                                </div>
-                                            </div>
-
-                                            <div class="tree-item folder" onclick="toggleFolder(this)">
-                                                <span class="arrow-icon">▶</span>
-                                                <span class="folder-icon">📂</span>
-                                                <span class="item-name">Chuong3_PromptAI</span>
-                                            </div>
-                                            <div class="tree-children" style="display: none;">
-                                                <div class="tree-item file">
-                                                    <span class="file-icon">📝</span>
-                                                    <span class="item-name">SoSoSanhPrompt_DoiChieu.docx</span>
+                                                    <span class="item-name">GhiChuQuanTrong.txt (Bản sao)</span>
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="margin-top-md">Nhật ký 12 bước thực hành thao tác tệp tin</h4>
+                                <p class="small-text text-muted">Nhấn nút "Trước" / "Sau" để kiểm tra từng thao tác trên hệ điều hành (Bấm vào ảnh để xem kích thước lớn):</p>
+                                
+                                <div class="step-walkthrough-slider" id="slider-task1">
+                                    <div class="slider-slides-container">
+                                        <!-- Step 1 -->
+                                        <div class="walkthrough-slide active" data-step="1">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 1 / 12</span>
+                                                <h5>Mở File Explorer</h5>
+                                                <p>Nhấn tổ hợp phím <strong>Windows + E</strong> hoặc nhấp vào biểu tượng thư mục màu vàng trên thanh tác vụ (Taskbar).</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh1.png" alt="Mở File Explorer" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 2 -->
+                                        <div class="walkthrough-slide" data-step="2">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 2 / 12</span>
+                                                <h5>Truy cập ổ đĩa/thư mục</h5>
+                                                <p>Ở cột bên trái File Explorer, nhấp vào <strong>This PC</strong>, sau đó nhấp đúp vào một ổ đĩa không phải ổ hệ thống (ví dụ: ổ <code>D:</code> hoặc <code>E:</code>). Nếu máy chỉ có ổ <code>C:</code>, hãy truy cập thư mục <code>Documents</code>.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh2.png" alt="Truy cập ổ đĩa" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 3 -->
+                                        <div class="walkthrough-slide" data-step="3">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 3 / 12</span>
+                                                <h5>Tạo thư mục mới</h5>
+                                                <p>Nhấp chuột phải vào khoảng trống bất kỳ -> chọn <strong>New</strong> -> <strong>Folder</strong>. Đặt tên thư mục theo quy chuẩn <code>ThucHanh_NguyenVanA</code> (ở đây đặt tên là <code>ThucHanh_HoangPhuongThao</code>) rồi nhấn <strong>Enter</strong>.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh3.1.png" alt="Tạo thư mục" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh3.2.png" alt="Đặt tên thư mục" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 4 -->
+                                        <div class="walkthrough-slide" data-step="4">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 4 / 12</span>
+                                                <h5>Vào thư mục vừa tạo</h5>
+                                                <p>Nhấp đúp chuột vào thư mục <code>ThucHanh_HoangPhuongThao</code> vừa thiết lập để mở nó ra.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh4.png" alt="Mở thư mục" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 5 -->
+                                        <div class="walkthrough-slide" data-step="5">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 5 / 12</span>
+                                                <h5>Tạo tệp văn bản mới</h5>
+                                                <p>Nhấp chuột phải vào khoảng trống -> chọn <strong>New</strong> -> <strong>Text Document</strong>. Đặt tên tệp tin ban đầu là <code>GhiChu.txt</code> và nhấn <strong>Enter</strong>.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh5.1.png" alt="Tạo Text Document" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh5.2.png" alt="File GhiChu" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 6 -->
+                                        <div class="walkthrough-slide" data-step="6">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 6 / 12</span>
+                                                <h5>Đổi tên tệp tin</h5>
+                                                <p>Nhấp chuột phải vào tệp <code>GhiChu.txt</code> -> chọn <strong>Rename</strong>. Đổi tên tệp thành <code>GhiChuQuanTrong.txt</code> và bấm <strong>Enter</strong>.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh6.1.png" alt="Đổi tên file" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh6.2.png" alt="File sau khi đổi tên" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 7 -->
+                                        <div class="walkthrough-slide" data-step="7">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 7 / 12</span>
+                                                <h5>Tạo thư mục con</h5>
+                                                <p>Trong thư mục <code>ThucHanh_HoangPhuongThao</code>, tiếp tục nhấp chuột phải -> chọn <strong>New</strong> -> <strong>Folder</strong>. Đặt tên thư mục con là <code>TaiLieu</code>.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh7.1.png" alt="Tạo thư mục con" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh7.2.png" alt="Thư mục con TaiLieu" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 8 -->
+                                        <div class="walkthrough-slide" data-step="8">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 8 / 12</span>
+                                                <h5>Sao chép tệp tin (Copy & Paste)</h5>
+                                                <p>Nhấp chuột phải vào <code>GhiChuQuanTrong.txt</code> -> chọn <strong>Copy</strong> (hoặc nhấn Ctrl + C). Sau đó, nhấp đúp vào thư mục con <code>TaiLieu</code>, nhấp chuột phải vào khoảng trống -> chọn <strong>Paste</strong> (hoặc nhấn Ctrl + V) để tạo bản sao.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh8.1.png" alt="Copy file" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh8.2.png" alt="Paste file" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 9 -->
+                                        <div class="walkthrough-slide" data-step="9">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 9 / 12</span>
+                                                <h5>Di chuyển tệp tin (Cut & Paste)</h5>
+                                                <p>Quay lại thư mục chính. Tạo một tệp văn bản mới tên <code>DiChuyen.txt</code>. Nhấp chuột phải vào tệp -> chọn <strong>Cut</strong> (Ctrl + X). Vào thư mục con <code>TaiLieu</code>, nhấp chuột phải -> chọn <strong>Paste</strong> (Ctrl + V) để chuyển hẳn tệp sang vị trí mới.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh9.1.png" alt="Tạo file mới" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh9.2.png" alt="Cut file" class="lightbox-trigger">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh9.3.png" alt="Paste file di chuyển" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 10 -->
+                                        <div class="walkthrough-slide" data-step="10">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 10 / 12</span>
+                                                <h5>Xóa tệp tin</h5>
+                                                <p>Trong thư mục <code>TaiLieu</code>, nhấp chuột phải vào tệp <code>GhiChuQuanTrong.txt</code> -> chọn <strong>Delete</strong>. Tệp tin này sẽ lập tức được chuyển vào Thùng rác (Recycle Bin) của hệ thống.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh10.png" alt="Xóa file" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 11 -->
+                                        <div class="walkthrough-slide" data-step="11">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 11 / 12</span>
+                                                <h5>Xóa vĩnh viễn tệp</h5>
+                                                <p>Chọn tệp <code>DiChuyen.txt</code> trong thư mục <code>TaiLieu</code>, nhấn giữ tổ hợp phím <strong>Shift + Delete</strong>. Trình duyệt hệ thống hiển thị cảnh báo xác nhận xóa vĩnh viễn không qua Thùng rác.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh11.png" alt="Xóa vĩnh viễn" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 12 -->
+                                        <div class="walkthrough-slide" data-step="12">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 12 / 12</span>
+                                                <h5>Khôi phục từ Thùng rác</h5>
+                                                <p>Nhấp đúp chuột vào biểu tượng <strong>Recycle Bin</strong> ngoài Desktop. Tìm tệp <code>GhiChuQuanTrong.txt</code>, nhấp chuột phải chọn <strong>Restore</strong> để đưa tệp quay trở lại thư mục <code>TaiLieu</code> ban đầu.</p>
+                                            </div>
+                                            <div class="slide-media multi-images">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh12.1.png" alt="Recycle Bin icon" class="lightbox-trigger" style="max-height: 80px; width: auto; object-fit: contain;">
+                                                <img src="Bai_tap/Bai1_muc1.4/hinh12.2.png" alt="Restore file" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <div class="slider-controls">
+                                        <button class="slider-control-btn prev" onclick="moveSlide('slider-task1', -1)">◀ Trước</button>
+                                        <div class="slider-indicators">
+                                            <span class="dot active" onclick="jumpToSlide('slider-task1', 0)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 1)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 2)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 3)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 4)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 5)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 6)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 7)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 8)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 9)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 10)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task1', 11)"></span>
+                                        </div>
+                                        <button class="slider-control-btn next" onclick="moveSlide('slider-task1', 1)">Sau ▶</button>
                                     </div>
                                 </div>
 
@@ -336,7 +479,7 @@
                                         <span class="attach-icon">📎</span>
                                         <span>Tài liệu đính kèm: Báo cáo cấu trúc chi tiết bài tập 1.pdf</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="Bai_tap/Bai1_muc1.4/bai1.md" download class="btn btn-secondary btn-sm">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
@@ -356,81 +499,171 @@
                             </div>
                             
                             <div class="content-body">
-                                <h4>1. Cú pháp và Toán tử tìm kiếm nâng cao</h4>
-                                <p>Trong nghiên cứu luật pháp, việc sàng lọc nguồn tin chính thống cực kỳ quan trọng. Tôi đã áp dụng các toán tử nâng cao trên Google Scholar và công cụ tìm kiếm quốc gia để lọc tài liệu:</p>
-                                
-                                <div class="table-container">
-                                    <table class="academic-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Toán tử</th>
-                                                <th>Cú pháp mẫu áp dụng</th>
-                                                <th>Mục đích lọc thông tin</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><code>""</code> (Khớp chính xác)</td>
-                                                <td><code>"Luật sở hữu trí tuệ 2019"</code></td>
-                                                <td>Tìm văn bản luật chính xác không bị lẫn từ khóa khác.</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>site:</code> (Lọc tên miền)</td>
-                                                <td><code>"tranh chấp hợp đồng" site:gov.vn</code></td>
-                                                <td>Tìm các án lệ và quy định của các cơ quan chính phủ (.gov.vn).</td>
-                                            </tr>
-                                            <tr>
-                                                <td><code>filetype:</code> (Định dạng file)</td>
-                                                <td><code>"thừa kế di sản" filetype:pdf</code></td>
-                                                <td>Tìm các công trình luận văn hoặc bài báo khoa học PDF nghiên cứu chuyên sâu.</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                <div class="academic-report-viewer">
+                                    <div class="report-sidebar">
+                                        <div class="sidebar-toc-title">Mục lục báo cáo</div>
+                                        <ul class="toc-list" id="toc-task2">
+                                            <li class="toc-item active" onclick="switchReportSection('task2', 'sec2-1', this)">1. Giới thiệu chủ đề</li>
+                                            <li class="toc-item" onclick="switchReportSection('task2', 'sec2-2', this)">2. Phương pháp tìm kiếm</li>
+                                            <li class="toc-item" onclick="switchReportSection('task2', 'sec2-3', this)">3. Đánh giá nguồn tin (CRAAP)</li>
+                                            <li class="toc-item" onclick="switchReportSection('task2', 'sec2-4', this)">4. Tài liệu tham khảo (Harvard)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="report-content-panel scrollable-panel" id="panel-task2">
+                                        <!-- Section 1 -->
+                                        <div class="report-section active" id="sec2-1">
+                                            <h4>Chủ đề: Miễn trách nhiệm hình sự trong pháp luật Việt Nam</h4>
+                                            <h5 class="margin-top-sm">1. Giới thiệu chủ đề</h5>
+                                            <p>Miễn trách nhiệm hình sự là một chế định quan trọng trong pháp luật hình sự Việt Nam, thể hiện tính nhân đạo và linh hoạt của Nhà nước trong xử lý tội phạm. Thay vì áp dụng hình phạt trong mọi trường hợp, pháp luật cho phép miễn trách nhiệm hình sự khi người phạm tội đáp ứng các điều kiện nhất định.</p>
+                                            <p>Việc nghiên cứu chủ đề này giúp hiểu rõ chính sách hình sự của Nhà nước và cách áp dụng pháp luật trong thực tiễn cuộc sống và tư pháp hình sự.</p>
+                                        </div>
+                                        
+                                        <!-- Section 2 -->
+                                        <div class="report-section" id="sec2-2">
+                                            <h5>2. Phương pháp tìm kiếm tài liệu</h5>
+                                            <p>Tài liệu nghiên cứu được thu thập một cách có chọn lọc từ các nguồn uy tín sau:</p>
+                                            <ul>
+                                                <li>Cơ sở dữ liệu học thuật (Google Scholar, thư viện trường ĐHQGHN/HLU).</li>
+                                                <li>Tạp chí khoa học chuyên ngành luật (Tạp chí Luật học, Tạp chí Nhà nước và Pháp luật...).</li>
+                                                <li>Sách chuyên khảo pháp luật của các chuyên gia đầu ngành.</li>
+                                            </ul>
+                                            <p><strong>Tiêu chí lựa chọn tài liệu:</strong> Có nguồn gốc rõ ràng, nội dung liên quan trực tiếp đến chế định miễn trách nhiệm hình sự, có giá trị học thuật cao và được trích dẫn trong các nghiên cứu khoa học khác. Tổng số tài liệu thu thập được là 10 tài liệu chất lượng, trong đó có hơn 5 bài báo khoa học phản biện chuyên sâu.</p>
+                                        </div>
+                                        
+                                        <!-- Section 3 -->
+                                        <div class="report-section" id="sec2-3">
+                                            <h5>3. Bảng đánh giá chất lượng nguồn tin (CRAAP Test)</h5>
+                                            <p>Các nguồn tài liệu được đánh giá nghiêm ngặt dựa trên: Uy tín tác giả, Nơi xuất bản, Phương pháp nghiên cứu và Tính cập nhật.</p>
+                                            
+                                            <div class="table-container">
+                                                <table class="academic-table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>STT</th>
+                                                            <th>Tài liệu</th>
+                                                            <th>Loại nguồn</th>
+                                                            <th>Nội dung chính</th>
+                                                            <th>Độ tin cậy</th>
+                                                            <th>Nhận xét</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td><strong>BLHS 2015</strong></td>
+                                                            <td>Văn bản</td>
+                                                            <td>Quy định miễn TNHS</td>
+                                                            <td><span class="rating-gold">★★★★★</span> Rất cao</td>
+                                                            <td>Nguồn pháp lý gốc quan trọng nhất.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td><strong>Giáo trình Luật HS</strong></td>
+                                                            <td>Sách</td>
+                                                            <td>Lý luận cơ bản</td>
+                                                            <td><span class="rating-gold">★★★★★</span> Rất cao</td>
+                                                            <td>Chuẩn mực học thuật để giảng dạy.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td><strong>Nguyễn Ngọc Hòa (2018)</strong></td>
+                                                            <td>Sách</td>
+                                                            <td>Phân tích miễn TNHS</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Chuyên sâu của chuyên gia đầu ngành.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td><strong>Tạp chí Luật học</strong></td>
+                                                            <td>Bài báo</td>
+                                                            <td>Nghiên cứu pháp lý</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Có phản biện khoa học uy tín.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>5</td>
+                                                            <td><strong>Tạp chí NN & PL</strong></td>
+                                                            <td>Bài báo</td>
+                                                            <td>Chính sách hình sự</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Cơ quan Viện Nhà nước & Pháp luật.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>6</td>
+                                                            <td><strong>Google Scholar</strong></td>
+                                                            <td>Bài khoa học</td>
+                                                            <td>Nghiên cứu quốc tế</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Đa dạng tài liệu khoa học toàn cầu.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>7</td>
+                                                            <td><strong>Microsoft Academic</strong></td>
+                                                            <td>Bài khoa học</td>
+                                                            <td>Lý thuyết pháp luật</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Nguồn lý thuyết kinh điển đáng tin cậy.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>8</td>
+                                                            <td><strong>Bộ Tư pháp</strong></td>
+                                                            <td>Internet</td>
+                                                            <td>Thông tin pháp luật</td>
+                                                            <td><span class="rating-gold">★★★★☆</span> Cao</td>
+                                                            <td>Kênh thông tin chính thống từ Bộ.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>9</td>
+                                                            <td><strong>PDF nghiên cứu</strong></td>
+                                                            <td>Internet</td>
+                                                            <td>Case study cụ thể</td>
+                                                            <td><span class="rating-gold">★★★☆☆</span> TB - Cao</td>
+                                                            <td>Thực tiễn phong phú nhưng cần đối chiếu.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>10</td>
+                                                            <td><strong>Wikipedia</strong></td>
+                                                            <td>Internet</td>
+                                                            <td>Tổng quan chung</td>
+                                                            <td><span class="rating-gold">★★☆☆☆</span> Trung bình</td>
+                                                            <td>Chỉ dùng để tham khảo khái quát.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            
+                                            <p class="margin-top-sm"><strong>Nhận xét ngắn:</strong> Các nguồn tài liệu được lựa chọn đảm bảo độ tin cậy và đa dạng. Nguồn học thuật chiếm tỷ lệ lớn, giúp nâng cao chất lượng nghiên cứu. Tuy nhiên, một số nguồn internet cần được kiểm chứng chéo với văn bản gốc trước khi sử dụng chính thức.</p>
+                                        </div>
+                                        
+                                        <!-- Section 4 -->
+                                        <div class="report-section" id="sec2-4">
+                                            <h5>4. Tài liệu tham khảo (Harvard)</h5>
+                                            <p>Danh sách tài liệu tham khảo được trích dẫn chuẩn xác theo định dạng Harvard:</p>
+                                            <ol class="harvard-references">
+                                                <li>Quốc hội (2015), <em>Bộ luật hình sự 2015</em>, Hà Nội.</li>
+                                                <li>Trường Đại học Luật Hà Nội (2020), <em>Giáo trình Luật hình sự Việt Nam</em>, NXB Công an nhân dân.</li>
+                                                <li>Nguyễn Ngọc Hòa (2018), <em>Miễn trách nhiệm hình sự trong luật Việt Nam</em>, NXB Tư pháp.</li>
+                                                <li>Trần Văn Độ (2019), “Chế định miễn trách nhiệm hình sự”, <em>Tạp chí Luật học</em>.</li>
+                                                <li>Lê Cảm (2017), “Chính sách hình sự Việt Nam”, <em>Tạp chí Nhà nước và Pháp luật</em>.</li>
+                                                <li>Smith, J. (2018), <em>Criminal Law Theory</em>, Oxford University Press.</li>
+                                                <li>Google Scholar (2024), <em>Criminal liability exemption studies</em>.</li>
+                                                <li>Microsoft Academic (2023), <em>Legal responsibility research</em>.</li>
+                                                <li>Bộ Tư pháp (2024), <em>Thông tin pháp luật</em>, <a href="http://www.moj.gov.vn" target="_blank">www.moj.gov.vn</a>.</li>
+                                                <li>Nguyen, T. (2020), “Exemption in criminal law”, <em>Journal of Legal Studies</em>.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <h4 class="margin-top-md">2. Bảng đánh giá chất lượng nguồn tin (CRAAP Test)</h4>
-                                <p>Mỗi tài liệu tìm được đều được đánh giá qua 5 tiêu chí CRAAP (Currency, Relevance, Authority, Accuracy, Purpose) để đảm bảo độ tin cậy khi trích dẫn trước tòa án hoặc báo cáo học thuật:</p>
-                                
-                                <div class="table-container">
-                                    <table class="academic-table">
-                                        <thead>
-                                            <tr>
-                                                <th>Tên tài liệu / Tác giả</th>
-                                                <th>Loại nguồn</th>
-                                                <th>Tính cập nhật</th>
-                                                <th>Độ tin cậy</th>
-                                                <th>Điểm đánh giá</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Tạp chí Tòa án Nhân dân điện tử</td>
-                                                <td>Bài viết Học thuật</td>
-                                                <td>Năm 2025 (Mới)</td>
-                                                <td>Rất cao (Cơ quan Tòa án)</td>
-                                                <td>9/10 (Xuất sắc)</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Blog Tư vấn Luật tự do</td>
-                                                <td>Website tổng hợp</td>
-                                                <td>Năm 2023 (Cũ hơn)</td>
-                                                <td>Trung bình (Cần đối chiếu lại)</td>
-                                                <td>5/10 (Cần cẩn trọng)</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-
                                 <div class="document-attach">
                                     <div class="attach-info">
                                         <span class="attach-icon">📎</span>
-                                        <span>Tài liệu đính kèm: Bảng đánh giá nguồn tin học thuật hoàn chỉnh.xlsx</span>
+                                        <span>Tài liệu đính kèm: Báo cáo tìm kiếm và đánh giá học thuật.md</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="Bai_tap/Bai2_muc2.4/Hoàng Phương Thảo.md" download class="btn btn-secondary btn-sm">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <!-- TAB 3: Viết Prompt hiệu quả -->
                         <div class="tab-panel" id="task-3">
                             <div class="panel-header">
@@ -441,54 +674,150 @@
                             <div class="panel-meta-grid">
                                 <div class="meta-item">
                                     <strong>Mục tiêu:</strong>
-                                    <span>Học cách chuyển đổi từ các câu hỏi cơ bản sang cấu trúc Prompt chuyên sâu (sử dụng khung bối cảnh, vai trò, hạn chế) để nhận phản hồi phân tích pháp lý chính xác từ AI.</span>
+                                    <span>Học cách chuyển đổi từ các câu hỏi cơ bản sang cấu trúc Prompt chuyên sâu (sử dụng bối cảnh, vai trò, hạn chế, phương pháp IRAC) để nhận phản hồi phân tích pháp lý chính xác từ AI.</span>
                                 </div>
                             </div>
                             
                             <div class="content-body">
-                                <h4>So sánh hiệu quả tương tác AI</h4>
-                                <p>Sự khác biệt giữa việc sử dụng một Prompt thông thường không có hướng dẫn và một Prompt đã được tối ưu hóa theo phương pháp kỹ nghệ câu lệnh (Prompt Engineering) cho các tác vụ tóm tắt luật học:</p>
-                                
-                                <div class="chat-comparison-grid">
-                                    <!-- Old Chat -->
-                                    <div class="chat-box chat-old">
-                                        <div class="chat-header">
-                                            <span class="chat-status-dot expired"></span>
-                                            <span>Prompt thông thường (Chưa tối ưu)</span>
+                                <h4>Thực nghiệm và So sánh các cấp độ viết Prompt</h4>
+                                <p class="small-text text-muted">Nhấp chọn các mức độ Prompt dưới đây để xem sự khác biệt về chất lượng câu lệnh và phản hồi thực tế từ AI:</p>
+
+                                <div class="prompt-tabs-container">
+                                    <!-- Buttons -->
+                                    <div class="prompt-buttons-row">
+                                        <button class="prompt-btn active" onclick="switchPromptTab(this, 'p-level-basic')">1. Prompt Cơ bản</button>
+                                        <button class="prompt-btn" onclick="switchPromptTab(this, 'p-level-improved')">2. Prompt Cải tiến</button>
+                                        <button class="prompt-btn" onclick="switchPromptTab(this, 'p-level-advanced')">3. Prompt Nâng cao</button>
+                                    </div>
+                                    
+                                    <!-- Panels -->
+                                    <div class="prompt-panels-content">
+                                        
+                                        <!-- Panel 1: Basic -->
+                                        <div class="prompt-panel-item active" id="p-level-basic">
+                                            <div class="prompt-split-grid">
+                                                <div class="prompt-info-pane">
+                                                    <h5>Đặc điểm câu lệnh</h5>
+                                                    <p class="text-danger">✗ Câu hỏi ngắn, thiên về lý thuyết thô. Ví dụ: "Trình bày...", "Nêu khái niệm..."</p>
+                                                    
+                                                    <h5 class="margin-top-sm">Đánh giá kết quả đầu ra</h5>
+                                                    <ul>
+                                                        <li>Dễ hiểu, phản hồi nhanh chóng.</li>
+                                                        <li>Tuy nhiên, nội dung quá chung chung, ít chiều sâu, không có tình huống thực tế và không giúp luyện tập tư duy pháp lý.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prompt-media-pane">
+                                                    <div class="simple-media-slider" id="slider-p-basic">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh3.png" alt="Prompt cơ bản 1" class="lightbox-trigger active">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh4.png" alt="Prompt cơ bản 2" class="lightbox-trigger">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh8.png" alt="Prompt cơ bản 3" class="lightbox-trigger">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <button onclick="moveSimpleSlide('slider-p-basic', -1)">◀</button>
+                                                            <span>Hình ảnh minh họa</span>
+                                                            <button onclick="moveSimpleSlide('slider-p-basic', 1)">▶</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="chat-messages">
-                                            <div class="message user">
-                                                <p>"Tóm tắt giúp tôi Luật sở hữu trí tuệ việt nam."</p>
+
+                                        <!-- Panel 2: Improved -->
+                                        <div class="prompt-panel-item" id="p-level-improved">
+                                            <div class="prompt-split-grid">
+                                                <div class="prompt-info-pane">
+                                                    <h5>Đặc điểm câu lệnh</h5>
+                                                    <p class="text-warning">⚡ Bổ sung yêu cầu cụ thể (số lượng câu, loại câu) và bao quát nhiều nội dung (giao kết, hiệu lực, chấm dứt...).</p>
+                                                    
+                                                    <h5 class="margin-top-sm">Đánh giá kết quả đầu ra</h5>
+                                                    <ul>
+                                                        <li>Có sự cân bằng giữa lý thuyết và thực hành, bắt đầu xuất hiện câu hỏi tình huống thực tế.</li>
+                                                        <li>Có kèm đáp án rõ ràng giúp tự ôn tập và kích thích tư duy phân tích cơ bản.</li>
+                                                        <li>Mức độ khó ở mức trung bình, chưa thật sự "đánh đố" để phân loại sâu.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prompt-media-pane">
+                                                    <div class="simple-media-slider" id="slider-p-improved">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh2.png" alt="Prompt cải tiến 1" class="lightbox-trigger active">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh5.png" alt="Prompt cải tiến 2" class="lightbox-trigger">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh9.png" alt="Prompt cải tiến 3" class="lightbox-trigger">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <button onclick="moveSimpleSlide('slider-p-improved', -1)">◀</button>
+                                                            <span>Hình ảnh minh họa</span>
+                                                            <button onclick="moveSimpleSlide('slider-p-improved', 1)">▶</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <div class="message ai">
-                                                <p><strong>AI phản hồi:</strong> Luật sở hữu trí tuệ Việt Nam quy định về quyền tác giả, quyền liên quan, quyền sở hữu công nghiệp và quyền đối với giống cây trồng. Nó bảo vệ các tác phẩm nghệ thuật, sáng chế, nhãn hiệu... Luật này ra đời năm 2005 và có nhiều lần sửa đổi bổ sung.</p>
-                                                <span class="chat-note text-danger">⚠️ Đánh giá: Quá sơ sài, thiếu chiều sâu phân tích và không áp dụng thực tế được.</span>
+                                        </div>
+
+                                        <!-- Panel 3: Advanced -->
+                                        <div class="prompt-panel-item" id="p-level-advanced">
+                                            <div class="prompt-split-grid">
+                                                <div class="prompt-info-pane">
+                                                    <h5>Đặc điểm câu lệnh</h5>
+                                                    <p class="text-success">✓ Thiết lập vai trò chuyên gia (Role), bối cảnh phức tạp (Context), phương pháp giải quyết tình huống luật (IRAC) và tiêu chí phân loại học thuật.</p>
+                                                    
+                                                    <h5 class="margin-top-sm">Đánh giá kết quả đầu ra</h5>
+                                                    <ul>
+                                                        <li>Có câu hỏi so sánh, đối chiếu và tình huống dài áp dụng trực tiếp mô hình lập luận pháp lý IRAC.</li>
+                                                        <li>Đáp án phân tích chặt chẽ, lập luận sắc bén sát với đề thi thật.</li>
+                                                        <li>Độ khó cao, phân loại sinh viên tốt nhưng cần nhiều thời gian tự nghiên cứu.</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="prompt-media-pane">
+                                                    <div class="simple-media-slider" id="slider-p-advanced">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh6.png" alt="Prompt nâng cao 1" class="lightbox-trigger active">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh7.png" alt="Prompt nâng cao 2" class="lightbox-trigger">
+                                                            <img src="Bai_tap/Bai3_muc3.4/hinh10.png" alt="Prompt nâng cao 3" class="lightbox-trigger">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <button onclick="moveSimpleSlide('slider-p-advanced', -1)">◀</button>
+                                                            <span>Hình ảnh minh họa</span>
+                                                            <button onclick="moveSimpleSlide('slider-p-advanced', 1)">▶</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="accordion-group margin-top-md">
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                                            <span>Phân tích lý do sự khác biệt giữa các cấp độ</span>
+                                            <span class="accordion-icon">+</span>
+                                        </div>
+                                        <div class="accordion-content">
+                                            <p>Sự khác biệt về chất lượng đầu ra giữa các prompt xuất phát chủ yếu từ mức độ cụ thể và định hướng mà người dùng cung cấp. Prompt cơ bản chỉ nêu yêu cầu chung chung, khiến mô hình AI tạo ra các kết quả an toàn, thiếu tính thực tiễn. Khi prompt được cải tiến bằng cách bổ sung số lượng, giới hạn phạm vi, AI sẽ hoạt động có hệ thống hơn. Ở cấp độ nâng cao, việc đưa ra yêu cầu về tư duy phân tích sâu, áp dụng tình huống thực tế và định vị vai trò chuyên nghiệp (luật sư/giảng viên) đã bắt buộc AI phải huy động lập luận sắc bén, có giá trị học thuật thực thụ.</p>
                                         </div>
                                     </div>
-
-                                    <!-- New Chat -->
-                                    <div class="chat-box chat-new">
-                                        <div class="chat-header">
-                                            <span class="chat-status-dot active"></span>
-                                            <span>Prompt cải tiến (Đã tối ưu hóa)</span>
+                                    
+                                    <div class="accordion-item">
+                                        <div class="accordion-header" onclick="toggleAccordion(this)">
+                                            <span>Nguyên tắc & Mẹo viết Prompt hiệu quả cho ngành Luật</span>
+                                            <span class="accordion-icon">+</span>
                                         </div>
-                                        <div class="chat-messages">
-                                            <div class="message user">
-                                                <p><strong>Prompt:</strong> "Hãy đóng vai là một luật sư chuyên ngành Sở hữu trí tuệ tại Việt Nam. Tôi là sinh viên Luật đang làm bài luận. Hãy tóm tắt cấu trúc chính của Luật Sở hữu Trí tuệ hiện hành dưới dạng bảng và chỉ ra 3 điểm mới nổi bật nhất của Luật sửa đổi năm 2022. Trình bày ngôn ngữ học thuật chuyên nghiệp."</p>
-                                            </div>
-                                            <div class="message ai">
-                                                <p><strong>AI phản hồi (Tóm tắt):</strong></p>
-                                                <ul>
-                                                    <li><strong>Phần 1:</strong> Quyền tác giả và quyền liên quan (Bảo hộ tác phẩm văn học, khoa học).</li>
-                                                    <li><strong>Phần 2:</strong> Quyền sở hữu công nghiệp (Sáng chế, nhãn hiệu, kiểu dáng công nghiệp).</li>
-                                                </ul>
-                                                <p><strong>3 Điểm mới nổi bật sửa đổi 2022:</strong><br>
-                                                1. Thừa nhận quyền đăng ký sáng chế/kiểu dáng từ ngân sách nhà nước.<br>
-                                                2. Siết chặt bảo hộ bản quyền số trên internet.<br>
-                                                3. Đơn giản hóa thủ tục xác lập quyền sở hữu công nghiệp.</p>
-                                                <span class="chat-note text-success">✓ Đánh giá: Phân tích chính xác, cấu trúc chuyên nghiệp, có giá trị học thuật cao.</span>
-                                            </div>
+                                        <div class="accordion-content">
+                                            <p><strong>Nguyên tắc cốt lõi:</strong></p>
+                                            <ul>
+                                                <li>Cụ thể hóa yêu cầu thay vì diễn đạt mơ hồ (xác định rõ số lượng chữ, hình thức trình bày).</li>
+                                                <li>Định hướng mục tiêu sử dụng rõ ràng (ôn tập, luyện thi học thuật hay tham chiếu nghiên cứu).</li>
+                                                <li>Quy định rõ mức độ tư duy mong muốn (phân biệt giữa nhận biết khái niệm và vận dụng giải quyết án lệ).</li>
+                                                <li>Cung cấp bối cảnh chi tiết (chỉ rõ chương học hoặc văn bản pháp luật, ví dụ: "áp dụng Bộ luật Dân sự 2015").</li>
+                                            </ul>
+                                            <p class="margin-top-sm"><strong>Mẹo thực tiễn:</strong></p>
+                                            <ul>
+                                                <li>Nên viết prompt mô phỏng cấu trúc của một đề thi thực tế để AI bám sát định dạng.</li>
+                                                <li>Luôn yêu cầu AI trình bày kết quả mạch lạc, logic (sử dụng bảng biểu, gạch đầu dòng, ký tự danh sách).</li>
+                                                <li>Bổ sung các từ khóa định hướng chuyên sâu như: <em>"theo hướng học thuật"</em>, <em>"áp dụng cấu trúc lập luận IRAC"</em>, hoặc <em>"có tính phân loại cao"</em>.</li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -496,9 +825,9 @@
                                 <div class="document-attach">
                                     <div class="attach-info">
                                         <span class="attach-icon">📎</span>
-                                        <span>Tài liệu đính kèm: Nhật ký Prompting và bảng đối chiếu kết quả.pdf</span>
+                                        <span>Tài liệu đính kèm: Báo cáo thực nghiệm và cẩm nang Prompting.pdf</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="Bai_tap/Bai3_muc3.4/Tài liệu chưa có tiêu đề.md" download class="btn btn-secondary btn-sm">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
@@ -519,7 +848,7 @@
                             
                             <div class="content-body">
                                 <h4>Quy trình phối hợp và Phân chia công việc pháp lý</h4>
-                                <p>Trong bài tập nhóm này, chúng tôi đã sử dụng mô hình quản lý dự án Agile/Kanban để điều hành đề tài nghiên cứu pháp luật về "Bảo vệ thông tin cá nhân trên môi trường mạng". Bảng công việc được thiết lập trực quan:</p>
+                                <p>Trong bài tập nhóm này, chúng tôi đã sử dụng mô hình quản lý dự án Agile/Kanban để điều hành đề tài nghiên cứu pháp luật về "Bảo vệ thông tin cá nhân trên môi trường mạng". Bảng công việc trực quan giúp tối ưu hóa tiến độ:</p>
                                 
                                 <div class="kanban-board">
                                     <!-- Column 1 -->
@@ -557,12 +886,135 @@
                                     </div>
                                 </div>
 
+                                <h4 class="margin-top-md">Nhật ký Minh chứng Quy trình Hợp tác Nhóm</h4>
+                                <p class="small-text text-muted">Nhấn nút "Trước" / "Sau" để kiểm tra từng tài liệu cộng tác thực tế của nhóm (Bấm vào ảnh để xem kích thước lớn):</p>
+                                
+                                <div class="step-walkthrough-slider" id="slider-task4">
+                                    <div class="slider-slides-container">
+                                        <!-- Step 1 -->
+                                        <div class="walkthrough-slide active" data-step="1">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 1 / 9</span>
+                                                <h5>Khởi tạo không gian làm việc số</h5>
+                                                <p>Thiết lập kênh làm việc chung của nhóm trên Microsoft Teams để thảo luận và lưu trữ dữ liệu dự án.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh1.png" alt="Khởi tạo không gian Teams" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 2 -->
+                                        <div class="walkthrough-slide" data-step="2">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 2 / 9</span>
+                                                <h5>Lập Kế hoạch & Phân công</h5>
+                                                <p>Phác thảo phân vai nhiệm vụ chi tiết và cập nhật thời hạn hoàn thành lên hệ thống quản lý công việc.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh2.png" alt="Phân vai dự án nhóm" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 3 -->
+                                        <div class="walkthrough-slide" data-step="3">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 3 / 9</span>
+                                                <h5>Trao đổi & Thảo luận Ý tưởng</h5>
+                                                <p>Họp thảo luận nhóm, đưa ra đề tài và các toán tử tìm kiếm cần thiết cho bài tập.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh3.png" alt="Trao đổi ý tưởng nhóm" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 4 -->
+                                        <div class="walkthrough-slide" data-step="4">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 4 / 9</span>
+                                                <h5>Đồng soạn thảo báo cáo (Co-authoring)</h5>
+                                                <p>Viết báo cáo trực tuyến trên Microsoft Word. Các thành viên cùng thảo luận và chỉnh sửa thời gian thực.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh4.png" alt="Đồng soạn thảo trực tuyến" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 5 -->
+                                        <div class="walkthrough-slide" data-step="5">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 5 / 9</span>
+                                                <h5>Xây dựng và Phản biện nội dung</h5>
+                                                <p>Đưa nội dung chi tiết vào các chương, bảo đảm tính học thuật và cấu trúc logic chặt chẽ.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh5.png" alt="Xây dựng nội dung học thuật" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 6 -->
+                                        <div class="walkthrough-slide" data-step="6">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 6 / 9</span>
+                                                <h5>Kiểm tra lịch sử đóng góp</h5>
+                                                <p>Theo dõi và đánh giá tỉ lệ tham gia đóng góp thực tế của từng thành viên thông qua lịch sử chỉnh sửa đám mây.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh6.png" alt="Kiểm tra lịch sử đóng góp" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 7 -->
+                                        <div class="walkthrough-slide" data-step="7">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 7 / 9</span>
+                                                <h5>Soát lỗi & Định dạng văn bản</h5>
+                                                <p>Căn lề chuẩn văn bản học thuật và kiểm tra chéo các phần tài liệu tham khảo theo quy tắc.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh7.png" alt="Soát lỗi và định dạng" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 8 -->
+                                        <div class="walkthrough-slide" data-step="8">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 8 / 9</span>
+                                                <h5>Rà soát toàn diện trước khi nộp</h5>
+                                                <p>Nhóm trưởng kiểm tra tổng thể nội dung, văn phong pháp lý và sự chuẩn mực của sản phẩm cuối cùng.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh8.png" alt="Rà soát toàn diện" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Step 9 -->
+                                        <div class="walkthrough-slide" data-step="9">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 9 / 9</span>
+                                                <h5>Nộp bài hoàn thiện lên LMS</h5>
+                                                <p>Trưởng nhóm tiến hành tải sản phẩm lên cổng nộp bài Teams/LMS của môn học đúng thời hạn.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai4_muc4.4/hinh9.png" alt="Nộp bài hoàn thiện" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <div class="slider-controls">
+                                        <button class="slider-control-btn prev" onclick="moveSlide('slider-task4', -1)">◀ Trước</button>
+                                        <div class="slider-indicators">
+                                            <span class="dot active" onclick="jumpToSlide('slider-task4', 0)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 1)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 2)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 3)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 4)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 5)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 6)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 7)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task4', 8)"></span>
+                                        </div>
+                                        <button class="slider-control-btn next" onclick="moveSlide('slider-task4', 1)">Sau ▶</button>
+                                    </div>
+                                </div>
+
                                 <div class="document-attach">
                                     <div class="attach-info">
                                         <span class="attach-icon">📎</span>
-                                        <span>Tài liệu đính kèm: Minh chứng hoạt động và phân vai dự án nhóm.pdf</span>
+                                        <span>Tài liệu đính kèm: Báo cáo phân vai và minh chứng cộng tác nhóm.pdf</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('Bản báo cáo hợp tác nhóm sẽ được tích hợp tải về tại đây!')">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
@@ -582,20 +1034,135 @@
                             </div>
                             
                             <div class="content-body">
-                                <h4>Trưng bày sản phẩm truyền thông số phối hợp cùng AI</h4>
-                                <p>Sản phẩm thiết kế đồ họa tuyên truyền về *"Luật giao thông đường bộ mới năm 2026"* được thực hiện qua sự định hình nội dung của người học kết hợp với các công cụ thiết kế thông minh hỗ trợ xử lý bố cục và hình ảnh:</p>
-                                
-                                <div class="media-showcase-card glass-card">
-                                    <div class="media-placeholder">
-                                        <!-- Decorative SVG representing legal digital graphic design -->
-                                        <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-                                            <rect x="3" y="3" width="18" height="18" rx="2" fill="currentColor" fill-opacity="0.05"/>
-                                            <circle cx="8.5" cy="8.5" r="1.5"/>
-                                            <path d="M21 15L16 10L5 21"/>
-                                        </svg>
-                                        <div class="media-overlay-info">
-                                            <h5>Ấn phẩm truyền thông số: Luật & Cuộc sống</h5>
-                                            <p>Hình ảnh đồ họa tuyên truyền thiết kế bởi Hoàng Phương Thảo thông qua sự hỗ trợ phối màu và phác họa ý tưởng của AI sinh ảnh.</p>
+                                <div class="split-layout">
+                                    <div class="split-left">
+                                        <h5 class="showcase-title">Ấn phẩm Infographic Tuyên truyền Hoàn chỉnh</h5>
+                                        <div class="infographic-preview-container">
+                                            <img src="Bai_tap/Bai5_muc5.4/image7.png" alt="Infographic hoàn chỉnh" class="lightbox-trigger infographic-img">
+                                            <div class="preview-overlay">
+                                                <span>🔍 Nhấp chuột vào ảnh để phóng to xem chi tiết</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-right">
+                                        <h5 class="showcase-title">Báo Cáo Sáng Tạo Nội Dung Số với AI</h5>
+                                        <div class="academic-report-viewer" id="report-task5">
+                                            <div class="report-sidebar">
+                                                <ul class="toc-list">
+                                                    <li class="toc-item active" onclick="switchReportSection('task5', 'sec5-1', this)">1. Ý tưởng & Mẫu</li>
+                                                    <li class="toc-item" onclick="switchReportSection('task5', 'sec5-2', this)">2. Tiến trình cùng AI</li>
+                                                    <li class="toc-item" onclick="switchReportSection('task5', 'sec5-3', this)">3. So sánh công cụ</li>
+                                                    <li class="toc-item" onclick="switchReportSection('task5', 'sec5-4', this)">4. Đạo đức & Tỉ lệ</li>
+                                                </ul>
+                                            </div>
+                                            <div class="report-content-panel scrollable-panel" id="panel-task5">
+                                                <!-- Section 1 -->
+                                                <div class="report-section active" id="sec5-1">
+                                                    <h4>1. Giới thiệu dự án & Ý tưởng sản phẩm</h4>
+                                                    <p>Dự án này thực hiện một sản phẩm sáng tạo nội dung số dưới dạng <strong>Infographic</strong> với chủ đề: <strong>“Ứng dụng AI trong học tập của sinh viên”</strong>.</p>
+                                                    <p>Mẫu thiết kế được định hướng theo phong cách hiện đại, trẻ trung, sử dụng màu sắc chủ đạo là xanh dương, trắng và tím nhạt để tạo cảm giác công nghệ. Nội dung Infographic gồm 5 phần chính:</p>
+                                                    <ol>
+                                                        <li><strong>AI là gì?</strong> Giới thiệu ngắn gọn.</li>
+                                                        <li><strong>Lợi ích của AI:</strong> Hỗ trợ tìm kiếm, giải thích kiến thức, gợi ý ý tưởng.</li>
+                                                        <li><strong>Hạn chế:</strong> Thông tin sai lệch, nguy cơ phụ thuộc, giảm tư duy phản biện.</li>
+                                                        <li><strong>Cách dùng hiệu quả:</strong> Prompt rõ ràng, tự kiểm chứng và chỉnh sửa lại kết quả.</li>
+                                                        <li><strong>Lưu ý đạo đức:</strong> Không đạo văn, tôn trọng bản quyền và tính trung thực học thuật.</li>
+                                                    </ol>
+                                                </div>
+                                                <!-- Section 2 -->
+                                                <div class="report-section" id="sec5-2">
+                                                    <h4>2. Tiến trình sáng tạo phối hợp cùng AI</h4>
+                                                    <p><strong>Giai đoạn 1: Lên ý tưởng cùng ChatGPT</strong></p>
+                                                    <p>Dùng câu lệnh phân vai để ChatGPT đề xuất bộ khung kết hợp rút gọn nội dung nháp súc tích.</p>
+                                                    <div class="simple-media-slider" id="slider-t5-chat">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image1.png" alt="ChatGPT lên ý tưởng" class="lightbox-trigger active">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image2.png" alt="Đầu ra ý tưởng" class="lightbox-trigger">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image3.png" alt="ChatGPT tạo nội dung chi tiết" class="lightbox-trigger">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <button onclick="moveSimpleSlide('slider-t5-chat', -1)">◀</button>
+                                                            <span>Hình ảnh minh chứng ChatGPT</span>
+                                                            <button onclick="moveSimpleSlide('slider-t5-chat', 1)">▶</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <p class="margin-top-sm"><strong>Giai đoạn 2: Tạo ảnh minh họa bằng Nano Banana AI</strong></p>
+                                                    <p>Tạo hình ảnh minh họa chính (sinh viên Việt Nam ngồi học với laptop và trợ lý AI phát sáng) cùng các biểu tượng phẳng tương ứng.</p>
+                                                    <div class="simple-media-slider" id="slider-t5-image">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image4.png" alt="Tạo ảnh bằng Nano Banana" class="lightbox-trigger active">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image5.png" alt="Tạo biểu tượng bằng AI" class="lightbox-trigger">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <button onclick="moveSimpleSlide('slider-t5-image', -1)">◀</button>
+                                                            <span>Hình ảnh minh chứng AI tạo ảnh</span>
+                                                            <button onclick="moveSimpleSlide('slider-t5-image', 1)">▶</button>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <p class="margin-top-sm"><strong>Giai đoạn 3: Thiết kế trên Canva</strong></p>
+                                                    <p>Tận dụng AI của Canva gợi ý bố cục, sau đó chỉnh sửa thủ công: thay thế icon, sắp xếp lại các khối và chèn ảnh AI sinh ra.</p>
+                                                    <div class="simple-media-slider" id="slider-t5-canva">
+                                                        <div class="slider-wrapper">
+                                                            <img src="Bai_tap/Bai5_muc5.4/image6.png" alt="Thiết kế trên Canva" class="lightbox-trigger active">
+                                                        </div>
+                                                        <div class="slider-mini-controls">
+                                                            <span>Minh chứng giao diện Canva</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Section 3 -->
+                                                <div class="report-section" id="sec5-3">
+                                                    <h4>3. So sánh hiệu quả các công cụ AI</h4>
+                                                    <p>Mỗi công cụ đóng vai trò bổ trợ và có ưu/nhược điểm rõ ràng:</p>
+                                                    <div class="table-container">
+                                                        <table class="academic-table">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Công cụ</th>
+                                                                    <th>Điểm mạnh</th>
+                                                                    <th>Hạn chế</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><strong>ChatGPT</strong></td>
+                                                                    <td>Lên ý tưởng cực nhanh, viết bài mạch lạc.</td>
+                                                                    <td>Nội dung đôi khi chung chung, cần lọc bớt chữ thừa.</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>Nano Banana</strong></td>
+                                                                    <td>Minh họa độc quyền, sắc nét, đúng phong cách.</td>
+                                                                    <td>Bản vẽ thỉnh thoảng lỗi chi tiết nhỏ (phải cắt sửa).</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td><strong>Canva AI/DALL-E</strong></td>
+                                                                    <td>Bố cục đẹp, nhiều công cụ trực quan.</td>
+                                                                    <td>Mẫu tự động cần can thiệp tay nhiều mới có cá tính.</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    <p><strong>Nhận xét:</strong> AI thay đổi hoàn toàn tiến trình làm nội dung, giúp tiết kiệm 50% thời gian nhưng vai trò chỉ đạo nghệ thuật của con người vẫn là quyết định.</p>
+                                                </div>
+                                                <!-- Section 4 -->
+                                                <div class="report-section" id="sec5-4">
+                                                    <h4>4. Đạo đức học thuật & Tỉ lệ đóng góp</h4>
+                                                    <p><strong>Quy tắc đạo đức áp dụng:</strong> Khai báo minh bạch việc dùng AI; Tự tay kiểm chứng và biên tập lại mọi câu chữ đầu ra để tránh truyền đạt thông tin sai lệch; Sử dụng tài nguyên thiết kế hợp pháp.</p>
+                                                    
+                                                    <h5 class="margin-top-sm">Phân chia tỉ lệ đóng góp sản phẩm</h5>
+                                                    <div class="progress-bar-legend">
+                                                        <span class="legend-dot legend-ai"></span><span>Đầu ra AI (40%)</span>
+                                                        <span class="legend-dot legend-human"></span><span>Chỉnh sửa & Sáng tạo cá nhân (60%)</span>
+                                                    </div>
+                                                    <div class="progress-bar-container">
+                                                        <div class="progress-bar-segment segment-ai" style="width: 40%">40%</div>
+                                                        <div class="progress-bar-segment segment-human" style="width: 60%">60%</div>
+                                                    </div>
+                                                    <p class="small-text margin-top-xs">Tỉ lệ đóng góp cho thấy sản phẩm có dấu ấn cá nhân rõ nét, AI chỉ giữ vai trò hỗ trợ tăng hiệu suất.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -603,9 +1170,9 @@
                                 <div class="document-attach">
                                     <div class="attach-info">
                                         <span class="attach-icon">📎</span>
-                                        <span>Tài liệu đính kèm: Kịch bản sáng tạo và sản phẩm thiết kế cuối cùng.pdf</span>
+                                        <span>Tài liệu đính kèm: Báo cáo dự án sáng tạo nội dung số bằng AI.pdf</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="Bai_tap/Bai5_muc5.4/Bao_Cao.md" download class="btn btn-secondary btn-sm">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
@@ -625,38 +1192,216 @@
                             </div>
                             
                             <div class="content-body">
-                                <h4>Bộ Tuyên ngôn & Nguyên tắc sử dụng AI cá nhân</h4>
-                                <p>Là một luật sư tương lai, tôi đặt liêm chính học thuật lên hàng đầu. Dưới đây là 4 nguyên tắc cốt lõi tôi cam kết tuân thủ tuyệt đối khi tích hợp công cụ AI vào học tập:</p>
+                                <h4>Bộ 7 Nguyên tắc cá nhân về Đạo đức và Liêm chính AI</h4>
+                                <p>Là một luật sư tương lai từ HLU, tôi đặt liêm chính học thuật lên hàng đầu. Dưới đây là 7 nguyên tắc đạo đức tôi cam kết tuân thủ tuyệt đối:</p>
                                 
-                                <div class="ethics-grid">
-                                    <div class="ethics-card glass-card">
-                                        <div class="ethics-num">I</div>
-                                        <h5>Nguyên tắc Trung thực & Liêm chính</h5>
-                                        <p>Luôn khai báo trung thực các công cụ AI được sử dụng trong nghiên cứu khoa học. Không sử dụng nguyên bản văn bản do AI tạo ra để nộp làm bài tập cá nhân mà không qua chỉnh sửa, phân tích của bản thân.</p>
+                                <div class="ethics-grid-seven">
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">01</div>
+                                        <h5>Không để AI làm thay</h5>
+                                        <p>Chỉ dùng AI để hỗ trợ tìm ý tưởng, dàn ý hoặc kiểm tra lỗi hành văn. Tuyệt đối không nộp nguyên văn bài AI viết.</p>
                                     </div>
-                                    <div class="ethics-card glass-card">
-                                        <div class="ethics-num">II</div>
-                                        <h5>Nguyên tắc Kiểm chứng thông tin</h5>
-                                        <p>Tuyệt đối không sử dụng thông tin từ AI cung cấp để làm cơ sở pháp lý trực tiếp mà chưa kiểm tra chéo với các nguồn luật gốc (Văn bản quy phạm pháp luật của nhà nước, án lệ chính thức).</p>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">02</div>
+                                        <h5>Luôn kiểm chứng nguồn tin</h5>
+                                        <p>Mọi điều luật, án lệ hoặc lý thuyết do AI đưa ra phải được đối chiếu lại bằng văn bản quy phạm pháp luật gốc.</p>
                                     </div>
-                                    <div class="ethics-card glass-card">
-                                        <div class="ethics-num">III</div>
-                                        <h5>Bảo mật & Tôn trọng Bản quyền</h5>
-                                        <p>Không đưa các thông tin cá nhân của người khác, dữ liệu chưa công bố của nhóm hoặc tài liệu mật vào các chatbot AI công cộng để tránh vi phạm quyền riêng tư và thất thoát dữ liệu pháp lý.</p>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">03</div>
+                                        <h5>Khai báo minh bạch</h5>
+                                        <p>Ghi nhận rõ ràng các công cụ AI đã hỗ trợ và phạm vi hỗ trợ của chúng trong phần phụ lục sản phẩm nghiên cứu.</p>
                                     </div>
-                                    <div class="ethics-card glass-card">
-                                        <div class="ethics-num">IV</div>
-                                        <h5>Công cụ bổ trợ, không thay thế</h5>
-                                        <p>Xác định rõ AI chỉ là một người trợ lý hỗ trợ tư duy phản biện, giúp tìm kiếm từ khóa hoặc gợi ý dàn ý, bản thân người học mới là người đưa ra các nhận định pháp lý và chịu trách nhiệm cho các kết luận đó.</p>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">04</div>
+                                        <h5>Nói không với gian lận</h5>
+                                        <p>Tuyệt đối không dùng AI trong phòng thi hoặc các bài kiểm tra trực tuyến khi không được sự đồng ý từ giảng viên.</p>
+                                    </div>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">05</div>
+                                        <h5>Bảo mật thông tin</h5>
+                                        <p>Không nhập dữ liệu cá nhân, thông tin riêng tư của người khác hoặc các tài liệu chưa công bố của nhóm lên các AI công cộng.</p>
+                                    </div>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">06</div>
+                                        <h5>Dùng AI để học sâu</h5>
+                                        <p>Sử dụng AI giải thích các khái niệm pháp lý khó để bản thân tự hiểu sâu, chứ không phải để né tránh việc tự học.</p>
+                                    </div>
+                                    <div class="ethics-card-v2 glass-card">
+                                        <div class="card-number">07</div>
+                                        <h5>Chịu trách nhiệm cuối cùng</h5>
+                                        <p>Sản phẩm học thuật nộp đi là danh dự cá nhân. Tôi chịu trách nhiệm 100% đối với mọi lỗi sai lệch thông tin nếu có.</p>
+                                    </div>
+                                </div>
+
+                                <h4 class="margin-top-md">Khảo sát & So sánh Chính sách sử dụng AI giữa các Trường Đại học</h4>
+                                <p class="small-text text-muted">Nhấp chọn các thẻ trường để xem so sánh hướng dẫn sử dụng AI trong học thuật:</p>
+                                
+                                <div class="policy-explorer" id="policy-explorer-container">
+                                    <div class="policy-tabs">
+                                        <button class="policy-tab active" onclick="switchPolicyTab(this, 'policy-hlu')">HLU & ĐHQGHN</button>
+                                        <button class="policy-tab" onclick="switchPolicyTab(this, 'policy-rmit')">RMIT Việt Nam</button>
+                                        <button class="policy-tab" onclick="switchPolicyTab(this, 'policy-ueh')">ĐH Kinh tế TP.HCM</button>
+                                        <button class="policy-tab" onclick="switchPolicyTab(this, 'policy-nhatrang')">ĐH Nha Trang</button>
+                                    </div>
+                                    <div class="policy-content-panel">
+                                        <!-- HLU & ĐHQGHN -->
+                                        <div class="policy-panel active" id="policy-hlu">
+                                            <h5>Chính sách HLU & ĐHQGHN</h5>
+                                            <p><strong>Tình trạng văn bản:</strong> Chưa ban hành văn bản quy định độc lập về AI, nhưng kiểm soát nghiêm ngặt qua quy định đạo văn chung (Hướng dẫn số 2383/HD-ĐHQGHN).</p>
+                                            <ul>
+                                                <li><strong>Mức độ cho phép:</strong> Được khuyến khích tiếp cận AI trong chương trình giáo dục số từ năm nhất.</li>
+                                                <li><strong>Hạn chế:</strong> Việc nộp sản phẩm học thuật của AI mà không ghi nhận nguồn bị tính vào lỗi đạo văn, thiếu trung thực khoa học.</li>
+                                                <li><strong>Đặc thù Luật học:</strong> Yêu cầu đối chiếu 100% tài liệu pháp lý gốc do tính chất chuẩn xác của ngành luật.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- RMIT -->
+                                        <div class="policy-panel" id="policy-rmit">
+                                            <h5>Chính sách RMIT Việt Nam</h5>
+                                            <p><strong>Tình trạng văn bản:</strong> Có tài liệu hướng dẫn cụ thể về liêm chính học thuật và sử dụng AI có trách nhiệm cho sinh viên.</p>
+                                            <ul>
+                                                <li><strong>Mức độ cho phép:</strong> Khuyến khích tích hợp AI vào học tập nhằm tăng năng lực tư duy số cho sinh viên trong công việc tương lai.</li>
+                                                <li><strong>Yêu cầu trích dẫn:</strong> Phải khai báo và mô tả rõ cách thức sử dụng AI trong mọi bài luận.</li>
+                                                <li><strong>Công cụ kiểm soát:</strong> Sử dụng hệ thống tự động để rà soát tỷ lệ viết bởi AI.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- UEH -->
+                                        <div class="policy-panel" id="policy-ueh">
+                                            <h5>Chính sách Đại học Kinh tế TP.HCM</h5>
+                                            <p><strong>Tình trạng văn bản:</strong> Ban hành quy định chi tiết về kiểm soát đạo văn và sử dụng AI trong nghiên cứu học thuật.</p>
+                                            <ul>
+                                                <li><strong>Nguyên tắc cốt lõi:</strong> AI chỉ là công cụ hỗ trợ, tác giả chịu toàn bộ trách nhiệm về tính trung thực của nghiên cứu.</li>
+                                                <li><strong>Khuyến cáo:</strong> Tránh đạo văn từ AI, không đưa tài liệu bảo mật nội bộ lên AI.</li>
+                                            </ul>
+                                        </div>
+                                        <!-- Nha Trang -->
+                                        <div class="policy-panel" id="policy-nhatrang">
+                                            <h5>Chính sách Đại học Nha Trang</h5>
+                                            <p><strong>Tình trạng văn bản:</strong> Có văn bản quy định cụ thể về việc kiểm soát sử dụng AI trong các bài tập lớn và đồ án.</p>
+                                            <ul>
+                                                <li><strong>Quy định:</strong> Sinh viên được phép dùng AI để tham khảo, lấy ý tưởng, nhưng không được phép sao chép nguyên văn.</li>
+                                                <li><strong>Chế tài:</strong> Trừ điểm nặng hoặc hủy kết quả bài làm nếu phát hiện gian lận bằng AI mà không trích nguồn.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <h4 class="margin-top-md">Tiến trình hỏi đáp ChatGPT để tổng hợp Báo cáo</h4>
+                                <p class="small-text text-muted">Sử dụng nút Trước/Sau để xem quá trình thiết lập các câu hỏi thông minh trên ChatGPT (Bấm ảnh để phóng to):</p>
+                                
+                                <div class="step-walkthrough-slider" id="slider-task6-prompts">
+                                    <div class="slider-slides-container">
+                                        <!-- Slide 1 -->
+                                        <div class="walkthrough-slide active" data-step="1">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 1 / 6</span>
+                                                <h5>Yêu cầu cấu trúc tổng quan</h5>
+                                                <p>Sử dụng câu lệnh thiết lập vai trò "Trợ lý nghiên cứu học thuật" để ChatGPT phân tích và đưa ra dàn ý chi tiết báo cáo.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image1.png" alt="ChatGPT cấu trúc báo cáo" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Slide 2 -->
+                                        <div class="walkthrough-slide" data-step="2">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 2 / 6</span>
+                                                <h5>Đầu ra cấu trúc của ChatGPT</h5>
+                                                <p>Kết quả đề xuất 6 phần chính rõ ràng của ChatGPT, làm nền tảng phát triển nội dung bài luận.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image2.png" alt="Kết quả cấu trúc báo cáo" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Slide 3 -->
+                                        <div class="walkthrough-slide" data-step="3">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 3 / 6</span>
+                                                <h5>Hỏi đáp về Lợi ích & Rủi ro</h5>
+                                                <p>Yêu cầu ChatGPT chỉ rõ các nguy cơ phụ thuộc công cụ và tính sai lệch thông tin ảnh hưởng trực tiếp đến người học luật.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image3.png" alt="Tổng hợp lợi ích và rủi ro" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Slide 4 -->
+                                        <div class="walkthrough-slide" data-step="4">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 4 / 6</span>
+                                                <h5>Phân tích các Vấn đề Đạo đức</h5>
+                                                <p>ChatGPT phân tích sâu về ranh giới gian lận học thuật, liêm chính trong trích dẫn và tác động tới phát triển kỹ năng tự học.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image4.png" alt="Phân tích vấn đề đạo đức" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Slide 5 -->
+                                        <div class="walkthrough-slide" data-step="5">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 5 / 6</span>
+                                                <h5>Gợi ý 7 nguyên tắc cá nhân</h5>
+                                                <p>AI đề xuất bản nháp bộ quy tắc liêm chính khoa học, sau đó được người học chỉnh sửa biên tập lại theo ngôn từ cá nhân.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image5.png" alt="Đề xuất nguyên tắc cá nhân" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                        <!-- Slide 6 -->
+                                        <div class="walkthrough-slide" data-step="6">
+                                            <div class="slide-info">
+                                                <span class="slide-badge">Bước 6 / 6</span>
+                                                <h5>Cấu trúc nội dung Infographic</h5>
+                                                <p>Yêu cầu ChatGPT tối ưu hóa câu chữ ngắn gọn dạng Nên làm/Không nên làm để chèn vào infographic tuyên truyền.</p>
+                                            </div>
+                                            <div class="slide-media">
+                                                <img src="Bai_tap/Bai6_muc6.4/image6.png" alt="Nội dung truyền thông đạo đức" class="lightbox-trigger">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Controls -->
+                                    <div class="slider-controls">
+                                        <button class="slider-control-btn prev" onclick="moveSlide('slider-task6-prompts', -1)">◀ Trước</button>
+                                        <div class="slider-indicators">
+                                            <span class="dot active" onclick="jumpToSlide('slider-task6-prompts', 0)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task6-prompts', 1)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task6-prompts', 2)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task6-prompts', 3)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task6-prompts', 4)"></span>
+                                            <span class="dot" onclick="jumpToSlide('slider-task6-prompts', 5)"></span>
+                                        </div>
+                                        <button class="slider-control-btn next" onclick="moveSlide('slider-task6-prompts', 1)">Sau ▶</button>
+                                    </div>
+                                </div>
+
+                                <h4 class="margin-top-md">Ấn phẩm Infographic Tuyên truyền Đạo đức AI</h4>
+                                <p class="small-text text-muted">Dưới đây là ấn phẩm truyền thông học thuật hoàn chỉnh do người học tự tay thiết kế với sự hỗ trợ của AI:</p>
+                                
+                                <div class="split-layout">
+                                    <div class="split-left">
+                                        <h5 class="showcase-title">1. Quá trình thiết kế nháp</h5>
+                                        <div class="infographic-preview-container compact-preview">
+                                            <img src="Bai_tap/Bai6_muc6.4/image7.png" alt="Quá trình thiết kế infographic đạo đức" class="lightbox-trigger infographic-img">
+                                            <div class="preview-overlay">
+                                                <span>🔍 Bấm để phóng to</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="split-right">
+                                        <h5 class="showcase-title">2. Ấn phẩm Infographic hoàn chỉnh</h5>
+                                        <div class="infographic-preview-container compact-preview">
+                                            <img src="Bai_tap/Bai6_muc6.4/image8.png" alt="Infographic đạo đức AI hoàn chỉnh" class="lightbox-trigger infographic-img">
+                                            <div class="preview-overlay">
+                                                <span>🔍 Bấm để phóng to</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="document-attach">
                                     <div class="attach-info">
                                         <span class="attach-icon">📎</span>
-                                        <span>Tài liệu đính kèm: Bản cam kết liêm chính và bộ quy tắc sử dụng AI.pdf</span>
+                                        <span>Tài liệu đính kèm: Báo cáo đầy đủ về sử dụng AI có trách nhiệm.pdf</span>
                                     </div>
-                                    <a href="#" class="btn btn-secondary btn-sm" onclick="alert('File tài liệu của bạn sẽ được tích hợp tại đây sau!')">Tải xuống</a>
+                                    <a href="Bai_tap/Bai6_muc6.4/Sử dụng AI có trách nhiệm trong học tập và nghiên cứu.md" download class="btn btn-secondary btn-sm">Tải xuống</a>
                                 </div>
                             </div>
                         </div>
@@ -679,10 +1424,10 @@
                     <div class="reflection-main glass-card scroll-reveal">
                         <h3>Trải nghiệm hành trình làm dự án</h3>
                         <p>
-                            Quá trình xây dựng Portfolio này thực sự là một trải nghiệm có giá trị lớn đối với tôi. Môn học **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo** đã giúp một sinh viên ngành Luật vốn quen thuộc với các trang văn bản và sách lý thuyết có cơ hội tiếp xúc sâu hơn với thế giới công nghệ số.
+                             Quá trình xây dựng Portfolio này thực sự là một trải nghiệm có giá trị lớn đối với tôi. Môn học **Nhập môn Công nghệ số và Ứng dụng Trí tuệ nhân tạo** đã giúp một sinh viên ngành Luật vốn quen thuộc với các trang văn bản và sách lý thuyết có cơ hội tiếp xúc sâu hơn với thế giới công nghệ số.
                         </p>
                         <p>
-                            Việc tập hợp và trình bày lại 6 bài tập thành phần giúp tôi nhìn nhận rõ sự tiến bộ của bản thân qua từng giai đoạn học tập. Việc ứng dụng công nghệ không làm giảm đi tính chất chuyên sâu của ngành luật, mà ngược lại, nó là đòn bẩy giúp cho việc nghiên cứu và áp dụng pháp luật của tôi trở nên năng suất, chính xác và chuyên nghiệp hơn rất nhiều.
+                             Việc tập hợp và trình bày lại 6 bài tập thành phần giúp tôi nhìn nhận rõ sự tiến bộ của bản thân qua từng giai đoạn học tập. Việc ứng dụng công nghệ không làm giảm đi tính chất chuyên sâu của ngành luật, mà ngược lại, nó là đòn bẩy giúp cho việc nghiên cứu và áp dụng pháp luật của tôi trở nên năng suất, chính xác và chuyên nghiệp hơn rất nhiều.
                         </p>
                     </div>
                     
@@ -747,6 +1492,13 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
 
     <!-- Custom Script -->
     <script src="script.js"></script>

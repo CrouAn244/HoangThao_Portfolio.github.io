@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabSwitcher();
     initScrollReveal();
     initCanvasParticles();
+    initLightbox();
 });
 
 /* ==========================================================================
@@ -292,3 +293,219 @@ function initCanvasParticles() {
     init();
     animate();
 }
+
+/* ==========================================================================
+   INTERACTIVE COMPONENT CONTROL LOGIC
+   ========================================================================== */
+
+// Slider states store
+const sliderStates = {};
+const simpleSliderStates = {};
+
+// Step Slider Controller (Tasks 1, 4 & 6)
+window.moveSlide = function(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+    const slides = slider.querySelectorAll('.walkthrough-slide');
+    const dots = slider.querySelectorAll('.slider-indicators .dot');
+    if (slides.length === 0) return;
+    
+    let currentIndex = sliderStates[sliderId] || 0;
+    slides[currentIndex].classList.remove('active');
+    if (dots.length > currentIndex) dots[currentIndex].classList.remove('active');
+    
+    currentIndex = (currentIndex + direction + slides.length) % slides.length;
+    sliderStates[sliderId] = currentIndex;
+    
+    slides[currentIndex].classList.add('active');
+    if (dots.length > currentIndex) dots[currentIndex].classList.add('active');
+};
+
+window.jumpToSlide = function(sliderId, index) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+    const slides = slider.querySelectorAll('.walkthrough-slide');
+    const dots = slider.querySelectorAll('.slider-indicators .dot');
+    if (slides.length === 0) return;
+    
+    let currentIndex = sliderStates[sliderId] || 0;
+    slides[currentIndex].classList.remove('active');
+    if (dots.length > currentIndex) dots[currentIndex].classList.remove('active');
+    
+    currentIndex = index;
+    sliderStates[sliderId] = currentIndex;
+    
+    slides[currentIndex].classList.add('active');
+    if (dots.length > currentIndex) dots[currentIndex].classList.add('active');
+};
+
+// Mini/Simple Image Slider Controller (Tasks 3, 5)
+window.moveSimpleSlide = function(sliderId, direction) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+    const wrapper = slider.querySelector('.slider-wrapper');
+    if (!wrapper) return;
+    const images = wrapper.querySelectorAll('img');
+    if (images.length === 0) return;
+    
+    let currentIndex = simpleSliderStates[sliderId];
+    if (currentIndex === undefined) {
+        const imgArr = Array.from(images);
+        const activeIdx = imgArr.findIndex(img => img.classList.contains('active'));
+        currentIndex = activeIdx >= 0 ? activeIdx : 0;
+    }
+    
+    images[currentIndex].classList.remove('active');
+    
+    currentIndex = (currentIndex + direction + images.length) % images.length;
+    simpleSliderStates[sliderId] = currentIndex;
+    
+    images[currentIndex].classList.add('active');
+};
+
+// Academic Report Section Switcher (Tasks 2 & 5)
+window.switchReportSection = function(taskId, sectionId, element) {
+    const viewer = element.closest('.academic-report-viewer');
+    if (!viewer) return;
+    
+    // Deactivate all TOC items in this report viewer
+    const tocItems = viewer.querySelectorAll('.toc-item');
+    tocItems.forEach(item => item.classList.remove('active'));
+    
+    // Activate clicked TOC item
+    element.classList.add('active');
+    
+    // Hide all sections in this report viewer
+    const sections = viewer.querySelectorAll('.report-section');
+    sections.forEach(sec => sec.classList.remove('active'));
+    
+    // Show target section
+    const targetSection = viewer.querySelector('#' + sectionId);
+    if (targetSection) {
+        targetSection.classList.add('active');
+        
+        // Scroll the report content panel to top
+        const contentPanel = viewer.querySelector('.report-content-panel');
+        if (contentPanel) {
+            contentPanel.scrollTop = 0;
+        }
+    }
+};
+
+// Prompt Level Tab Switcher (Task 3)
+window.switchPromptTab = function(element, panelId) {
+    const container = element.closest('.prompt-tabs-container');
+    if (!container) return;
+    
+    // Deactivate all prompt buttons
+    const buttons = container.querySelectorAll('.prompt-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Activate clicked button
+    element.classList.add('active');
+    
+    // Hide all panel items
+    const panels = container.querySelectorAll('.prompt-panel-item');
+    panels.forEach(p => p.classList.remove('active'));
+    
+    // Show target panel
+    const targetPanel = container.querySelector('#' + panelId);
+    if (targetPanel) {
+        targetPanel.classList.add('active');
+    }
+};
+
+// Accordion Toggler (Task 3)
+window.toggleAccordion = function(header) {
+    const item = header.parentElement;
+    if (!item) return;
+    const content = item.querySelector('.accordion-content');
+    const icon = header.querySelector('.accordion-icon');
+    if (!content || !icon) return;
+    
+    // Toggle active state
+    item.classList.toggle('active');
+    
+    if (item.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        content.style.padding = '16px 20px';
+        content.style.borderTop = '1px solid rgba(0,0,0,0.06)';
+        icon.textContent = '−';
+        icon.style.transform = 'rotate(180deg)';
+    } else {
+        content.style.maxHeight = '0';
+        content.style.padding = '0 20px';
+        content.style.borderTop = '1px solid transparent';
+        icon.textContent = '+';
+        icon.style.transform = 'none';
+    }
+};
+
+// University Policy Explorer Switcher (Task 6)
+window.switchPolicyTab = function(element, panelId) {
+    const container = element.closest('.policy-explorer');
+    if (!container) return;
+    
+    // Deactivate all policy tabs
+    const tabs = container.querySelectorAll('.policy-tab');
+    tabs.forEach(tab => tab.classList.remove('active'));
+    
+    // Activate clicked tab
+    element.classList.add('active');
+    
+    // Hide all policy panels
+    const panels = container.querySelectorAll('.policy-panel');
+    panels.forEach(p => p.classList.remove('active'));
+    
+    // Show target policy panel
+    const targetPanel = container.querySelector('#' + panelId);
+    if (targetPanel) {
+        targetPanel.classList.add('active');
+    }
+};
+
+// Lightbox Modal Controller (Global)
+function initLightbox() {
+    const modal = document.getElementById('lightbox-modal');
+    const img = document.getElementById('lightbox-img');
+    const caption = document.getElementById('lightbox-caption');
+    const closeBtn = document.querySelector('.lightbox-close');
+    
+    if (!modal || !img || !caption) return;
+    
+    // Listen for clicks on lightbox-trigger elements (images)
+    document.addEventListener('click', (e) => {
+        if (e.target && e.target.classList.contains('lightbox-trigger')) {
+            modal.style.display = 'block';
+            img.src = e.target.src;
+            img.alt = e.target.alt || 'Ảnh minh chứng';
+            caption.textContent = e.target.alt || 'Ảnh minh chứng';
+            document.body.style.overflow = 'hidden'; // Lock scrolling
+        }
+    });
+    
+    // Close modal function
+    function closeModal() {
+        modal.style.display = 'none';
+        document.body.style.overflow = ''; // Restore scrolling
+    }
+    
+    // Bind close click events
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+    
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal || e.target === closeBtn) {
+            closeModal();
+        }
+    });
+    
+    // Close on Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modal.style.display === 'block') {
+            closeModal();
+        }
+    });
+}
+

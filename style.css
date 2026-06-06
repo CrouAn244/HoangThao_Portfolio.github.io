@@ -1817,8 +1817,8 @@ strong {
 /* 3. Academic Report Viewer (Tasks 2 & 5) */
 .academic-report-viewer {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 25px;
+    grid-template-columns: 190px 1fr;
+    gap: 15px;
     min-height: 380px;
     background: #ffffff;
     border-radius: var(--border-radius-md);
@@ -1874,7 +1874,7 @@ strong {
 }
 
 .report-content-panel {
-    padding: 30px;
+    padding: 20px 15px;
     height: 400px;
     overflow-y: auto;
 }

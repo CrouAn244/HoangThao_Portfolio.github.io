@@ -2357,10 +2357,10 @@ strong {
 }
 
 .accordion-content {
-    padding: 0 20px;
+    padding: 16px 20px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out, padding 0.3s ease-out, border 0.3s ease-out;
+    transition: max-height 0.3s ease-out, border 0.3s ease-out;
     font-size: 0.88rem;
     color: var(--text-muted);
     line-height: 1.6;

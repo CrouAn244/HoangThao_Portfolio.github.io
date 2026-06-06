@@ -96,7 +96,7 @@ function initFadeEffect() {
     // HTML slides with correct styled components to preserve original colors
     const slides = [
         'Chuyên ngành <span class="highlight-text">Luật học</span>',
-        '<span class="highlight-text">Trường Đại học Luật Hà Nội</span>'
+        '<span class="highlight-text">Đại học Luật Đại học quốc gia Hà Nội</span>'
     ];
     let index = 0;
 
@@ -428,13 +428,11 @@ window.toggleAccordion = function(header) {
     
     if (item.classList.contains('active')) {
         content.style.maxHeight = content.scrollHeight + 'px';
-        content.style.padding = '16px 20px';
         content.style.borderTop = '1px solid rgba(0,0,0,0.06)';
         icon.textContent = '−';
         icon.style.transform = 'rotate(180deg)';
     } else {
         content.style.maxHeight = '0';
-        content.style.padding = '0 20px';
         content.style.borderTop = '1px solid transparent';
         icon.textContent = '+';
         icon.style.transform = 'none';

@@ -246,7 +246,7 @@ function initCanvasParticles() {
             this.size = Math.random() * 2 + 0.5; // Small, subtle dots
             this.speedX = Math.random() * 0.2 - 0.1; // Very slow drift
             this.speedY = Math.random() * -0.3 - 0.1; // Slowly drift upwards
-            this.color = Math.random() > 0.5 ? 'rgba(59, 94, 148, 0.08)' : 'rgba(197, 168, 128, 0.12)';
+            this.color = Math.random() > 0.5 ? 'rgba(139, 28, 28, 0.08)' : 'rgba(197, 168, 128, 0.12)';
         }
 
         update() {
